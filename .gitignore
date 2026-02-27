@@ -1,0 +1,16 @@
+# Project handoff document — local only, do not publish
+HANDOFF.md
+
+# Python virtual environment (don't commit this to GitHub)
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS system files
+.DS_Store
+
+# Editor files
+.vscode/
+*.swp
+*.swo
