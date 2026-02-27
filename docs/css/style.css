@@ -1,0 +1,975 @@
+/* ==========================================================================
+   VIES DES SAINTS — Medieval Hagiographic Manuscripts
+   style.css — Complete Design System
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS CUSTOM PROPERTIES
+   -------------------------------------------------------------------------- */
+:root {
+  /* Color palette — warm parchment & dark medieval tones */
+  --color-parchment:       #f5e6c8;
+  --color-parchment-dark:  #e8d5a3;
+  --color-parchment-light: #fdf4e0;
+  --color-brown:           #2c1810;
+  --color-brown-mid:       #5c3d2e;
+  --color-brown-light:     #8b6558;
+  --color-gold:            #c89b3c;
+  --color-gold-light:      #e8c97e;
+  --color-gold-pale:       #f5e8c0;
+  --color-red:             #8b1a1a;
+  --color-red-dark:        #6b1212;
+  --color-text:            #1a0f00;
+  --color-text-muted:      #6b5a4e;
+
+  /* Typography */
+  --font-body:             'Atkinson Hyperlegible', 'Segoe UI', Arial, sans-serif;
+  --font-display:          Georgia, 'Times New Roman', serif;
+  --font-transcription:    'JunicodeVF', 'Junicode', Georgia, 'Times New Roman', serif;
+
+  /* Spacing */
+  --space-xs:   0.25rem;
+  --space-sm:   0.5rem;
+  --space-md:   1rem;
+  --space-lg:   2rem;
+  --space-xl:   4rem;
+
+  /* Layout */
+  --max-width:  1100px;
+  --nav-height: 60px;
+
+  /* Decorative borders */
+  --border-gold:  1px solid var(--color-gold);
+  --border-gold2: 2px solid var(--color-gold);
+  --border-gold3: 3px solid var(--color-gold);
+  --border-red:   2px solid var(--color-red);
+  --radius:       4px;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. JUNICODE VARIABLE FONT (@font-face)
+      Place JunicodeVF-Roman.woff2 and JunicodeVF-Italic.woff2 in docs/fonts/
+      Download from: https://github.com/psb1558/Junicode-font/releases
+   -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'JunicodeVF';
+  src: url('../fonts/JunicodeVF-Roman.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JunicodeVF';
+  src: url('../fonts/JunicodeVF-Italic.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. RESET & BASE
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-parchment);
+  /* Subtle parchment texture via layered gradients */
+  background-image:
+    radial-gradient(ellipse at 20% 25%, rgba(180, 140, 80, 0.10) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 75%, rgba(120, 80,  40, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse at 55% 45%, rgba(200, 160, 100, 0.05) 0%, transparent 70%),
+    radial-gradient(ellipse at 10% 80%, rgba(160, 120, 60, 0.06) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--color-red);
+  text-decoration: underline;
+  text-decoration-color: rgba(139, 26, 26, 0.4);
+  text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+a:hover {
+  color: var(--color-red-dark);
+  text-decoration-color: var(--color-red-dark);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-brown);
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: var(--space-md);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* --------------------------------------------------------------------------
+   4. LAYOUT UTILITIES
+   -------------------------------------------------------------------------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.page-main {
+  max-width: var(--max-width);
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-lg);
+  flex: 1;
+}
+
+.page-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--color-brown);
+  border-bottom: var(--border-gold2);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Ornamental divider */
+.divider {
+  border: none;
+  border-top: var(--border-gold);
+  margin: var(--space-lg) 0;
+  opacity: 0.6;
+}
+
+/* External link indicator */
+a.ext-link::after {
+  content: ' ↗';
+  font-size: 0.75em;
+  opacity: 0.7;
+}
+
+
+/* --------------------------------------------------------------------------
+   5. NAVIGATION
+   -------------------------------------------------------------------------- */
+.site-nav {
+  background-color: var(--color-brown);
+  border-bottom: var(--border-gold3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.nav-brand:hover {
+  color: var(--color-gold-light);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.nav-links a {
+  color: var(--color-parchment);
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.88;
+  transition: color 0.15s, opacity 0.15s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--color-gold-light);
+  opacity: 1;
+}
+
+.nav-links a[aria-current="page"] {
+  border-bottom: 2px solid var(--color-gold);
+  padding-bottom: 2px;
+}
+
+
+/* --------------------------------------------------------------------------
+   6. SITE HEADER (homepage)
+   -------------------------------------------------------------------------- */
+.site-header {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md) calc(var(--space-xl) * 0.75);
+  border-bottom: var(--border-gold2);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(200, 155, 60, 0.12) 0%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+/* Decorative top line */
+.site-header::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--color-gold) 20%,
+    var(--color-gold-light) 50%,
+    var(--color-gold) 80%,
+    transparent 100%
+  );
+  margin-bottom: var(--space-lg);
+}
+
+.site-title {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  color: var(--color-brown);
+  font-style: italic;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 1px 0 var(--color-gold-light);
+  margin-bottom: var(--space-sm);
+}
+
+.site-subtitle {
+  color: var(--color-text-muted);
+  font-size: clamp(0.9rem, 2vw, 1.15rem);
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+
+/* --------------------------------------------------------------------------
+   7. SAINTS GRID (homepage)
+   -------------------------------------------------------------------------- */
+.saints-section {
+  max-width: var(--max-width);
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-lg);
+  flex: 1;
+}
+
+.saints-section-title {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-brown-light);
+  margin-bottom: var(--space-lg);
+}
+
+.saints-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: var(--space-lg);
+}
+
+.saint-card {
+  border: var(--border-gold2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 8px rgba(44, 24, 16, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.saint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(44, 24, 16, 0.20);
+}
+
+.saint-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.saint-card__image-wrap {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: var(--color-parchment-dark);
+  background-image: linear-gradient(
+    135deg,
+    var(--color-parchment-dark) 0%,
+    var(--color-gold-pale) 50%,
+    var(--color-parchment-dark) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.saint-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.saint-card:hover .saint-card__image-wrap img {
+  transform: scale(1.05);
+}
+
+/* Fallback shown when image is missing */
+.saint-card__image-fallback {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  color: var(--color-gold);
+  text-shadow: 0 0 20px rgba(200, 155, 60, 0.4);
+  user-select: none;
+}
+
+.saint-card__info {
+  padding: var(--space-md) var(--space-md) calc(var(--space-md) * 1.2);
+  background-color: var(--color-brown);
+  color: var(--color-parchment);
+}
+
+.saint-card__name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-xs);
+}
+
+.saint-card__desc {
+  font-size: 0.82rem;
+  color: var(--color-parchment-dark);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+
+/* --------------------------------------------------------------------------
+   8. DROP CAPS — Illuminated Initial Style
+   -------------------------------------------------------------------------- */
+.drop-cap::first-letter {
+  font-family: var(--font-display);
+  font-size: 4.2em;
+  line-height: 0.75;
+  float: left;
+  margin: 0.06em 0.12em 0 0;
+  color: var(--color-red);
+  text-shadow:
+    2px 2px 0 var(--color-gold),
+    -1px -1px 0 rgba(200, 155, 60, 0.3);
+  font-weight: bold;
+}
+
+
+/* --------------------------------------------------------------------------
+   9. SAINT INDIVIDUAL PAGES
+   -------------------------------------------------------------------------- */
+.saint-article {
+  max-width: var(--max-width);
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-lg);
+}
+
+.saint-page-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+  border-bottom: var(--border-gold2);
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.saint-hero-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: var(--border-gold2);
+  border-radius: var(--radius);
+}
+
+.saint-hero-fallback {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(135deg, var(--color-parchment-dark), var(--color-gold-pale));
+  border: var(--border-gold2);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--color-gold);
+}
+
+.saint-page-header__text h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: var(--space-sm);
+}
+
+.saint-dates {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-xs);
+}
+
+.saint-feast {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.saint-feast strong {
+  color: var(--color-red);
+  font-style: normal;
+}
+
+.saint-bio {
+  margin-bottom: var(--space-xl);
+}
+
+.saint-bio h2,
+.saint-manuscripts h2 {
+  font-size: 1.35rem;
+  border-left: 4px solid var(--color-gold);
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-md);
+  color: var(--color-brown);
+}
+
+/* Manuscript list on saint pages */
+.ms-count {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.ms-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.ms-list__item {
+  border: var(--border-gold);
+  border-left: 4px solid var(--color-red);
+  border-radius: var(--radius);
+  padding: var(--space-md) var(--space-md) var(--space-md) calc(var(--space-md) + 4px);
+  background: rgba(255, 255, 255, 0.28);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: var(--space-xs) var(--space-md);
+  transition: background-color 0.15s;
+}
+
+.ms-list__item:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.ms-list__shelfmark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--color-brown);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ms-list__meta {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  align-items: center;
+}
+
+.meta-badge {
+  background: rgba(44, 24, 16, 0.07);
+  border: 1px solid rgba(200, 155, 60, 0.4);
+  border-radius: 3px;
+  padding: 1px 8px;
+  font-size: 0.78rem;
+}
+
+.ms-list__links {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--space-xs);
+}
+
+.ms-list__links a {
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.btn-transcription {
+  background: var(--color-red);
+  color: var(--color-parchment-light) !important;
+  text-decoration: none !important;
+  padding: 4px 12px;
+  border-radius: var(--radius);
+  font-size: 0.82rem !important;
+  transition: background-color 0.15s;
+  display: inline-block;
+}
+
+.btn-transcription:hover {
+  background: var(--color-red-dark) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   10. MANUSCRIPTS TABLE (manuscripts.html)
+   -------------------------------------------------------------------------- */
+.table-controls {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+  align-items: center;
+}
+
+.table-controls input[type="search"],
+.table-controls select {
+  padding: 8px 14px;
+  border: var(--border-gold);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.55);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.table-controls input[type="search"]:focus,
+.table-controls select:focus {
+  border-color: var(--color-red);
+  box-shadow: 0 0 0 2px rgba(139, 26, 26, 0.15);
+}
+
+.table-controls input[type="search"] {
+  min-width: 240px;
+}
+
+.ms-table-wrap {
+  overflow-x: auto;
+  border: var(--border-gold);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(44, 24, 16, 0.08);
+}
+
+.ms-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ms-table thead {
+  background-color: var(--color-brown);
+}
+
+.ms-table th {
+  padding: 12px var(--space-md);
+  text-align: left;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: normal;
+  color: var(--color-gold);
+  border-bottom: var(--border-gold2);
+  white-space: nowrap;
+}
+
+.ms-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s;
+}
+
+.ms-table th.sortable:hover {
+  color: var(--color-gold-light);
+}
+
+.sort-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.75em;
+  opacity: 0.6;
+}
+
+.ms-table th.sort-asc .sort-arrow::after  { content: '▲'; opacity: 1; }
+.ms-table th.sort-desc .sort-arrow::after { content: '▼'; opacity: 1; }
+
+.ms-table td {
+  padding: 10px var(--space-md);
+  border-bottom: 1px solid rgba(200, 155, 60, 0.25);
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+.ms-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ms-table tr:hover td {
+  background-color: rgba(200, 155, 60, 0.08);
+}
+
+.ms-table td.shelfmark-cell {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.ms-count-display {
+  margin-top: var(--space-md);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.saint-tag {
+  display: inline-block;
+  background: rgba(139, 26, 26, 0.08);
+  border: 1px solid rgba(139, 26, 26, 0.25);
+  border-radius: 3px;
+  padding: 1px 7px;
+  font-size: 0.78rem;
+  margin: 1px 2px;
+  color: var(--color-red-dark);
+}
+
+
+/* --------------------------------------------------------------------------
+   11. TRANSCRIPTION PAGE
+   -------------------------------------------------------------------------- */
+.transcription-article {
+  max-width: 900px;
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-lg);
+}
+
+.transcription-header {
+  border-bottom: var(--border-gold2);
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.transcription-header h1 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.ms-metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: rgba(44, 24, 16, 0.04);
+  border: var(--border-gold);
+  border-radius: var(--radius);
+  margin-bottom: var(--space-md);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.meta-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+}
+
+.meta-value {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-brown);
+  font-size: 0.95rem;
+}
+
+.transcription-ext-links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+}
+
+/* The transcription text itself — Junicode */
+.transcription-section {
+  margin-bottom: var(--space-xl);
+}
+
+.transcription-section h2 {
+  font-size: 1.25rem;
+  border-left: 4px solid var(--color-gold);
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.transcription-text {
+  font-family: var(--font-transcription);
+  font-size: 1.1rem;
+  line-height: 1.95;
+  max-width: 72ch;
+}
+
+.folio-marker {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--color-red);
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  margin: var(--space-lg) 0 var(--space-xs);
+  padding-top: var(--space-xs);
+  border-top: 1px solid rgba(139, 26, 26, 0.25);
+  display: block;
+}
+
+.transcription-notes {
+  border-top: var(--border-gold);
+  padding-top: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.transcription-notes h2 {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-md);
+}
+
+.transcription-notes p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+
+/* --------------------------------------------------------------------------
+   12. ABOUT PAGE
+   -------------------------------------------------------------------------- */
+.about-section {
+  margin-bottom: var(--space-xl);
+}
+
+.about-section h2 {
+  font-size: 1.35rem;
+  border-left: 4px solid var(--color-gold);
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.team-list li {
+  padding: var(--space-sm) 0;
+  border-bottom: var(--border-gold);
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.team-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-note {
+  background: rgba(200, 155, 60, 0.12);
+  border: 1px dashed var(--color-gold);
+  border-radius: var(--radius);
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.85rem;
+  color: var(--color-brown-mid);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.todo-note::before {
+  content: '✏ TODO: ';
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* --------------------------------------------------------------------------
+   13. FOOTER
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: var(--color-brown);
+  color: var(--color-parchment-dark);
+  text-align: center;
+  padding: var(--space-lg);
+  margin-top: auto;
+  font-size: 0.82rem;
+  border-top: var(--border-gold3);
+  line-height: 1.7;
+}
+
+.site-footer a {
+  color: var(--color-gold-light);
+  text-decoration-color: rgba(232, 201, 126, 0.4);
+}
+
+.site-footer a:hover {
+  color: var(--color-gold);
+}
+
+.footer-divider {
+  margin: 0 var(--space-md);
+  opacity: 0.4;
+}
+
+
+/* --------------------------------------------------------------------------
+   14. RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .saint-page-header {
+    grid-template-columns: 160px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-lg: 1.25rem;
+    --space-xl: 2.5rem;
+  }
+
+  .nav-inner {
+    padding: var(--space-sm) var(--space-md);
+    height: auto;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    gap: var(--space-md);
+  }
+
+  .saints-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .saint-page-header {
+    grid-template-columns: 1fr;
+  }
+
+  .saint-hero-img,
+  .saint-hero-fallback {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .ms-list__item {
+    grid-template-columns: 1fr;
+  }
+
+  .ms-list__links {
+    grid-column: 1;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .table-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-controls input[type="search"] {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .saints-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ms-metadata-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transcription-text {
+    font-size: 1rem;
+  }
+}

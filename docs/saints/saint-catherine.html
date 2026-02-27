@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sainte Catherine d'Alexandrie — Vies des Saints</title>
+  <meta name="description" content="Présentation de sainte Catherine d'Alexandrie et liste des manuscrits contenant sa Vie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="nav-brand" href="../index.html">Vies des Saints</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../manuscripts.html">Manuscrits</a></li>
+        <li><a href="../about.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <article class="saint-article">
+
+      <header class="saint-page-header">
+        <div>
+          <img class="saint-hero-img"
+               src="../images/saint-catherine.svg"
+               alt="Enluminure de Sainte Catherine d'Alexandrie avec sa roue"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="saint-hero-fallback" style="display:none;" aria-hidden="true">✝</div>
+        </div>
+        <div class="saint-page-header__text">
+          <h1>Sainte Catherine d'Alexandrie</h1>
+          <p class="saint-dates">†&nbsp;305 apr. J.-C. (martyre supposé)</p>
+          <p class="saint-feast">Fête&nbsp;: <strong>25 novembre</strong></p>
+          <p>
+            Vierge, martyre et philosophe d'Alexandrie. L'une des saintes les plus
+            représentées dans l'art médiéval, patronne des savants et des étudiants.
+          </p>
+        </div>
+      </header>
+
+      <section class="saint-bio">
+        <h2>Biographie</h2>
+        <p class="drop-cap">
+          Catherine est présentée par la tradition hagiographique comme une jeune fille
+          de noble naissance, dotée d'une intelligence exceptionnelle, qui vécut à
+          Alexandrie sous le règne de l'empereur Maxence. Instruite dans toutes les
+          sciences de son temps, elle défendit la foi chrétienne face à cinquante
+          philosophes païens convoqués pour la convaincre d'abjurer&nbsp;: loin d'être
+          convaincue, elle convertit ses adversaires.
+        </p>
+        <p>
+          Condamnée au supplice de la roue garnie de lames tranchantes, elle fut
+          miraculeusement délivrée par un ange qui brisa l'instrument de torture.
+          Elle fut finalement décapitée, et selon la légende, du lait plutôt que du
+          sang coula de sa blessure. Les anges transportèrent son corps jusqu'au mont
+          Sinaï, où son culte se développa autour du monastère qui porte aujourd'hui
+          son nom.
+        </p>
+        <p>
+          Au Moyen Âge, Catherine figure parmi les Quatorze Auxiliateurs et elle est
+          l'une des voix entendue par Jeanne d'Arc. Sa Vie, composée en plusieurs
+          versions latines, fut traduite et adaptée en nombreuses langues vernaculaires,
+          dont plusieurs textes en ancien français et en moyen anglais d'une grande
+          qualité littéraire — notamment la Vie de sainte Catherine composée par
+          Clémence de Barking au XIIe siècle.
+        </p>
+        <p class="todo-note">
+          Ajouter une analyse des versions en langue d'oïl et des traditions
+          textuelles spécifiques aux manuscrits du corpus.
+        </p>
+      </section>
+
+      <section class="saint-manuscripts">
+        <h2>Manuscrits contenant la Vie de sainte Catherine</h2>
+        <p class="ms-count">1 manuscrit recensé dans cette base</p>
+
+        <ul class="ms-list">
+          <li class="ms-list__item">
+            <div class="ms-list__shelfmark">
+              Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112
+            </div>
+            <div class="ms-list__meta">
+              <span class="meta-badge">XIIIe siècle</span>
+              <span class="meta-badge">Parchemin</span>
+              <span class="meta-badge">Picardie</span>
+              <span class="meta-badge">344 feuillets</span>
+            </div>
+            <div class="ms-list__links">
+              <a href="../transcriptions/bnf-fr-23112.html" class="btn-transcription">
+                Lire la transcription →
+              </a>
+              <a href="https://jonas.irht.cnrs.fr/consulter/manuscrit/detail_manuscrit.php?projet=71291"
+                 target="_blank" rel="noopener" class="ext-link">Jonas</a>
+            </div>
+          </li>
+        </ul>
+
+        <p class="todo-note">
+          Ajouter d'autres manuscrits. Mettre à jour MANUSCRIPT_IDS dans
+          scraper/scrape_jonas.py.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Projet de recherche sur les manuscrits hagiographiques médiévaux
+      <span class="footer-divider">·</span>
+      Données issues du catalogue <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+  </footer>
+
+</body>
+</html>

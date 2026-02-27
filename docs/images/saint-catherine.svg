@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <linearGradient id="bg-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5a3"/>
+      <stop offset="50%" style="stop-color:#f5e8c0"/>
+      <stop offset="100%" style="stop-color:#e0c88a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="400" fill="url(#bg-c)"/>
+  <rect x="8" y="8" width="284" height="384" fill="none" stroke="#c89b3c" stroke-width="3"/>
+  <rect x="14" y="14" width="272" height="372" fill="none" stroke="#c89b3c" stroke-width="1" stroke-dasharray="6,4"/>
+  <circle cx="20" cy="20" r="5" fill="#c89b3c" opacity="0.7"/>
+  <circle cx="280" cy="20" r="5" fill="#c89b3c" opacity="0.7"/>
+  <circle cx="20" cy="380" r="5" fill="#c89b3c" opacity="0.7"/>
+  <circle cx="280" cy="380" r="5" fill="#c89b3c" opacity="0.7"/>
+  <!-- Crown -->
+  <polygon points="108,58 120,38 135,55 150,32 165,55 180,38 192,58" fill="#c89b3c" stroke="#8b6020" stroke-width="1.5"/>
+  <rect x="108" y="55" width="84" height="16" fill="#c89b3c" stroke="#8b6020" stroke-width="1"/>
+  <!-- Jewels in crown -->
+  <circle cx="135" cy="63" r="4" fill="#8b1a1a"/>
+  <circle cx="150" cy="63" r="4" fill="#8b1a1a"/>
+  <circle cx="165" cy="63" r="4" fill="#8b1a1a"/>
+  <!-- Halo -->
+  <circle cx="150" cy="100" r="50" fill="none" stroke="#c89b3c" stroke-width="2.5" stroke-dasharray="4,3" opacity="0.8"/>
+  <!-- Face -->
+  <ellipse cx="150" cy="105" rx="30" ry="34" fill="#e8c880"/>
+  <!-- Eyes -->
+  <ellipse cx="139" cy="99" rx="4" ry="4.5" fill="#5c3d2e"/>
+  <ellipse cx="161" cy="99" rx="4" ry="4.5" fill="#5c3d2e"/>
+  <!-- Hair -->
+  <path d="M 120 82 Q 150 65 180 82 L 180 135 Q 150 150 120 135 Z" fill="#8b6020" opacity="0.4"/>
+  <!-- Body/dress -->
+  <path d="M 95 155 Q 150 140 205 155 L 220 330 Q 150 345 80 330 Z" fill="#2c1870" stroke="#1a0f50" stroke-width="1.5"/>
+  <!-- Mantle/cloak -->
+  <path d="M 95 155 Q 60 200 70 330" fill="none" stroke="#c89b3c" stroke-width="2"/>
+  <path d="M 205 155 Q 240 200 230 330" fill="none" stroke="#c89b3c" stroke-width="2"/>
+  <!-- Wheel (Catherine's symbol) -->
+  <circle cx="80" cy="285" r="38" fill="none" stroke="#8b6020" stroke-width="3"/>
+  <circle cx="80" cy="285" r="8" fill="#c89b3c" stroke="#8b6020" stroke-width="2"/>
+  <!-- Wheel spokes -->
+  <line x1="80" y1="247" x2="80" y2="323" stroke="#8b6020" stroke-width="2"/>
+  <line x1="42" y1="285" x2="118" y2="285" stroke="#8b6020" stroke-width="2"/>
+  <line x1="53" y1="258" x2="107" y2="312" stroke="#8b6020" stroke-width="2"/>
+  <line x1="107" y1="258" x2="53" y2="312" stroke="#8b6020" stroke-width="2"/>
+  <!-- Spikes on wheel -->
+  <polygon points="80,243 76,252 84,252" fill="#8b1a1a"/>
+  <polygon points="80,327 76,318 84,318" fill="#8b1a1a"/>
+  <polygon points="38,285 47,281 47,289" fill="#8b1a1a"/>
+  <polygon points="122,285 113,281 113,289" fill="#8b1a1a"/>
+  <!-- Palm branch (martyrdom) -->
+  <line x1="220" y1="160" x2="220" y2="330" stroke="#4a7a20" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="210" cy="195" rx="16" ry="6" fill="#5a9a28" transform="rotate(-20,210,195)"/>
+  <ellipse cx="230" cy="218" rx="16" ry="6" fill="#5a9a28" transform="rotate(15,230,218)"/>
+  <ellipse cx="208" cy="245" rx="16" ry="6" fill="#5a9a28" transform="rotate(-25,208,245)"/>
+  <!-- Caption -->
+  <rect x="30" y="340" width="240" height="44" fill="rgba(44,24,16,0.08)" rx="3"/>
+  <text x="150" y="358" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#5c3d2e" font-style="italic">Sainte Catherine d'Alexandrie</text>
+  <text x="150" y="375" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#8b6558">vierge et martyre · IVe siècle</text>
+</svg>

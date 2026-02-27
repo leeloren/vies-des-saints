@@ -1,0 +1,645 @@
+[
+  {
+    "jonas_id": 71291,
+    "jonas_url": "https://jonas.irht.cnrs.fr/consulter/manuscrit/detail_manuscrit.php?projet=71291",
+    "shelfmark": "Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112",
+    "date": "13e s (la date au dernier feuillet, 1200, n'est certainement pas la date du manuscrit)",
+    "language": "oil-français",
+    "support": "Parchemin",
+    "dimensions": "324 × 228 mm",
+    "folios": "344",
+    "columns": "2",
+    "script": "libraria",
+    "origin": "Picardie",
+    "provenance": "",
+    "saints": [
+      "saint-martin",
+      "saint-nicholas",
+      "saint-catherine"
+    ],
+    "contents": [
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Clément",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Clément|Incipit référence de l'œuvre: Sains Climens fu li tiers apostoiles de Rome. Il faisoit moult volentiers les enseignemens saint Pierre et sains Pierres li dona le dignité d'estre apostoiles",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1947",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Chryzant et de sainte Daire",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Chryzant et de sainte Daire|Incipit référence de l'œuvre: Tholomeus tres noble hom et honorez de la cité d'Alixandre, bien puissanz, quant il vint a la cité de Rome",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2028",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Dispute de saint Pierre et de saint Paul contre Simon le magicien",
+        "raw_title": "Cisterciens de Vaucelles|Dispute de saint Pierre et de saint Paul contre Simon le magicien|Incipit référence de l'œuvre: Quant saint Pous fu venus a Rome li juif vindrent a lui et li distrent",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1733",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Passion de saint Pierre",
+        "raw_title": "Cisterciens de Vaucelles|Passion de saint Pierre|Incipit référence de l'œuvre: Apres le tians que nostres sires jhesucris fu venus en terre et nes del ventre de le virge marie",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5848",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Passion de saint Paul",
+        "raw_title": "Cisterciens de Vaucelles|Passion de saint Paul|Incipit référence de l'œuvre: Quant Lucas fu venus a Rome de Galatia et Tytus de Dalmatia s'atendirent illuec monseigneur s. Pol",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5850",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Thomas l'apôtre",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Thomas l'apôtre|Incipit référence de l'œuvre: Nostres sires Jhesucriz s'aparut a saint Thomas l'apostre en cel tens qu'il estoit en Cesaire",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=3772",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Jean l'évangéliste",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Jean l'évangéliste|Incipit référence de l'œuvre: Domiciens fu empereres de Rome apres Noiron et commanda que tous les crestiens que l'en trouveroit occeist",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4252",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Sylvestre",
+        "raw_title": "Anonyme|Vie de saint Sylvestre|Incipit référence de l'œuvre: Saint Silvestres quant il fu enfes si le bailla Juste sa mere qui veve estoit a un provoire por aprendre. Cil si estoit mout preudome et avoit non Cirinus",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1982",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Sébastien",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Sébastien|Incipit référence de l'œuvre: Sains Sebastiens fu nés de Nerbonne et norris a Melans. Moult estoit preudons et bons crestiens",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4742",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Philippe",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Philippe|Incipit référence de l'œuvre: Apres l'ascention de nostre seignor JC prescha saint Phelippe en Scithe qi est une partie de Grece",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=3761",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Jacques le Mineur",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Jacques le Mineur|Incipit référence de l'œuvre: Sains Jasques dont vous aves oi, qui fu cousins Nostre Seigneur Jhesucrist, et fu evesques de Jherusalem, et fu apelé Juste en son non, il fu deciples Nostre Seigneur",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1950",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Agnès",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Agnès|Incipit référence de l'œuvre: Saint Ambroise nous raconte que quant saincte Agnes fut de l'eaige de treze ans qu'elle ama Nostre Seigneur de tout son cueur sur toutes riens",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4783",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Vincent",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Vincent|Incipit référence de l'œuvre: Saint Vincent fu mout hauz hons. Son pere et sa mere le norrirent mout richement et le firent en s'enfance aprendre a lettres",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2031",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Agathe",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Agathe|Incipit référence de l'œuvre: Quintiens qui estoit prevost et conseillier de Sezille, quant il oyt la renommee de saincte Agathe que elle estoit gentil femme et jeune et du tout au service de Jhesucrist atornee",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4784",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Julienne",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Julienne|Incipit référence de l'œuvre: Au temps que Maximiens qui estoit empereres de Rome fesoit les crestienz tourmenter et sainte Yglise destruire, avoit a Nycomedie un senateur qui avoit non Elyseus",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2143",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie des saints Satyr, Saturnin, Perpétue et Félicité",
+        "raw_title": "Cisterciens de Vaucelles|Vie des saints Satyr, Saturnin, Perpétue et Félicité|Incipit référence de l'œuvre: Au tans que Valeriens et Galeriens estoient empereeur et qu'il faisoient les persecutions seur sainte eglise avoit un conseillier en Aufrique en une chité qui a non Tyburce",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5851",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Grégoire le Grand",
+        "raw_title": "Anonyme|Vie de saint Grégoire le Grand|Incipit référence de l'œuvre: Saint Gregoire fu nez a Rome. Ses peres ot non Gordianus et sa mere Salvia et furent de la ligniee des senatours, bones gens et religieus",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1983",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Marc",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Marc|Incipit référence de l'œuvre: El tens qe saint Piere l'apostle ot presché en Antioche et il ot converti a Deu grant partie de la gent",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=3762",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Alexandre, pape, et ses compagnons",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Alexandre, pape, et ses compagnons|Incipit référence de l'œuvre: Saint Alixandre fu le cinquiesme pape de Rome apres saint Pierre. Il fu mont prodon et jones d'aage",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5230",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie des saints Janvier, Gordien et Epimaque",
+        "raw_title": "Cisterciens de Vaucelles|Vie des saints Janvier, Gordien et Epimaque|Incipit référence de l'œuvre: En chel tans que Julianus estoit empereres de Rome si s'en fuirent maint crestien cha et la our peur qu'il eurent de lui",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5852",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Domitille",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Domitille|Incipit référence de l'œuvre: A Romme avoit une mout riche damoyselle, gentil femme estoit et mout jeune et se estoit niepce de Domitien l'empereur",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4785",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Pancrace",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Pancrace|Incipit référence de l'œuvre: En ce temps que Valerien et Galerien estoient empereurs a Rome avoit en Frise un mout hault homme et riche, Dedonius avoit non",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5231",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Victor de Syrie et sainte Couronne",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Victor de Syrie et sainte Couronne|Incipit référence de l'œuvre: Anthonius un roi de sarrazins commanda par tout son empire que se les crestiens ne voloient sacrifier aus ydoles que l'en les occist...",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5232",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Pétronille",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Pétronille|Incipit référence de l'œuvre: Ung des disciples de saint Pierre l'appostre nous raconte que sainte Peronnelle fu paralatique (sic)",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4786",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vies de saint Pierre l'Exorciste et de saint Marcellin prêtre",
+        "raw_title": "Cisterciens de Vaucelles|Vies de saint Pierre l'Exorciste et de saint Marcellin prêtre|Incipit référence de l'œuvre: Il avint ou temps que Serenus fu juge de Rome qu'il fit prandre un acolite prodome. Pierre avoit non",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5233",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie des saints Prime et Félicien",
+        "raw_title": "Cisterciens de Vaucelles|Vie des saints Prime et Félicien|Incipit référence de l'œuvre: En ce temps que Dioclecien et Maximien estoient empereurs de Rome si commanderent par tout l'empire que l'en tourmentast tous ceuls qui ne vouldroient sacrifier",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5234",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Ignace",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Ignace|Incipit référence de l'œuvre: A ce tens que Traiuns estoit empereres de Rome sainz Ignaces qui fu deciples saint Jehan l'evangeliste estoit evesques d'Antioche",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4743",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de sainte Thaïs",
+        "raw_title": "Anonyme|Vie de sainte Thaïs|Incipit référence de l'œuvre: Qui diex doint droit sens certes moult doit hair",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5360",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Vie de saint Martial de Limoges",
+        "raw_title": "Wauchier de Denain|Vie de saint Martial de Limoges|Incipit référence de l'œuvre: Au tens que nostre sire JC preechoit et ensegnoit les juis qui estoient de la ligniee Benjamin",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1761",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Helinant de Froidmont",
+        "title": "Vers de la mort",
+        "raw_title": "Helinant de Froidmont|Vers de la mort|Incipit référence de l'œuvre: Mort qui m'a mis muer en mue / En cele estuve ou li cors sue / Ce qu'a fait au siecle d'outrage",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5156",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Georges",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Georges|Incipit référence de l'œuvre: Au tans Dacien l'empereour qui les crestiens porsivoit et destruioit les eglises iert conestables de chevaliers li bons eurés Joires",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5853",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Barthélemy",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Barthélemy|Incipit référence de l'œuvre: Trois Indes sont devisees des hystoriographies. Le premiere est vers Ethyope, le seconde vers les Mediens",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5854",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Matthieu",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Matthieu|Incipit référence de l'œuvre: Il avint qu'en Ethyope eut II encanteeurs Zaroes et Arphazar en une cité qui est apelee Nadaver",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5855",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie des saints Simon et Jude",
+        "raw_title": "Cisterciens de Vaucelles|Vie des saints Simon et Jude|Incipit référence de l'œuvre: Quant Symons chananee et Judas zelotes li apostre Nostre Seignor furent par le revelation du Saint Esprit entré en Perse",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5856",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Jacques le Majeur",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Jacques le Majeur|Incipit référence de l'œuvre: Si comme sains Jakes li apostres freres s. Jehan le evageliste aloit par les synagoges de Judee",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5857",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Laurent",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Laurent|Incipit référence de l'œuvre: Apres le passion monseigneur s. Sixte l'apostoile de Rome fu pris mesires s. Leurens et livres a I prevost",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5858",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie et miracles de saint Antoine",
+        "raw_title": "Anonyme|Vie et miracles de saint Antoine|Incipit référence de l'œuvre: Messires sains Antoines fu d'Egypte nes et norris et estrais des plus gentiex gens et des plus rikes de toute le terre",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5859",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Julien l'hospitalier",
+        "raw_title": "Anonyme|Vie de saint Julien l'hospitalier|Incipit référence de l'œuvre: Uns preudons raconte la vie saint Julien que il a translatee de latin en roumans",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2033",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de sainte Bathilde",
+        "raw_title": "Anonyme|Vie de sainte Bathilde|Incipit référence de l'œuvre: Benoist soit Nostre Seigneur qui vouldroit que chascun fust saint et vouldroit que chascun venist a sa verité",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4791",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Arnoul",
+        "raw_title": "Anonyme|Vie de saint Arnoul|Incipit référence de l'œuvre: Mesire sains Ernouz eut tant d'onnor de sen lignaige qu'il fu estrais de plus roial lignage et del plus gentil de France",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5860",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Paul ermite",
+        "raw_title": "Anonyme|Vie de saint Paul ermite|Incipit référence de l'œuvre: Assez de genz ont sovent doute qi fu li premiers hermites qui premierement habita es fores",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1995",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Adrien",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Adrien|Incipit référence de l'œuvre: En icel tans que Maximiens guerroia sainte eglise s'avint qu'il vint en une chité qui avoit a non Nichomede",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5861",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint André",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint André|Incipit référence de l'œuvre: Aprés la sainte ascension NS furent li apostre espars par diverses regions. Mesires sains Andrius ala en un pais",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4697",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Denis",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Denis|Incipit référence de l'œuvre: Apres che tans que nostre sires ot soufert mort et passion boneueree de la quele li salus de nos ames nous est venus",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5862",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de sainte Félicité et de ses sept fils",
+        "raw_title": "Anonyme|Vie de sainte Félicité et de ses sept fils|Incipit référence de l'œuvre: Au tans que Anthoines estoit empereres erent cil qui crestien estoient molt apressé et agrevé",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5863",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Christine",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Christine|Incipit référence de l'œuvre: Quant seinte crestientez croissoit et florissoit par les hautes miracles que Nostre Sires fesoit por les seinz et por les seintes qui por sa  loi essaucier recevoient martire",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2020",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de sainte Cécile",
+        "raw_title": "Cisterciens de Vaucelles|Vie de sainte Cécile|Incipit référence de l'œuvre: Haute chose est d'oir et de retenir la sainte foy et la sainte loy nostre seigneur que li apostre tindrent et ensuivoient",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2021",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Sixte",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Sixte|Incipit référence de l'œuvre: Ce fu el temps que Decius Cesar fu emperieres que cil qui Nostre Signor apeloient estoient martyrié et soffroient griez tormenz por l'amor de lui. En cel tens estoit messires seins Syxtes qi estoit néz d'Athenes",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2032",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Hippolyte",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Hippolyte|Incipit référence de l'œuvre: Vous avés oi de saint Lorens le beneoist martir conment il reçut martire pour l'amour Nostre Seigneur Jhesucrist et comment saint Justins li prestres et saint Ypolite l'ensevelirent moult honorablement",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1957",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Blaise",
+        "raw_title": "Anonyme|Vie de saint Blaise|Incipit référence de l'œuvre: En le cite de Sebaste qui est en le tere de Capadoche ot plusors sains homes et plusors dames",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5864",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Dossier sur saint Martin de Tours",
+        "raw_title": "Wauchier de Denain|Dossier sur saint Martin de Tours|Incipit référence de l'œuvre: Sainz Martins fu nez de la contree de Pannonie d'un chastel qui Ysaphane avoit non",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1856",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Vie de saint Brice",
+        "raw_title": "Wauchier de Denain|Vie de saint Brice|Incipit référence de l'œuvre: Quant seinz Brices estoit jouvenciaus il guetoit molt seint Martin por ce qu'il le veoit viell home et de grant abstinence et de seinte vie",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1743",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de saint Lambert de Liège",
+        "raw_title": "Anonyme|Vie de saint Lambert de Liège|Incipit référence de l'œuvre: Messires seint Lambert, li gloriex martirs et qui fu seinz prestres et tres chiers amis Nostre Seigneur Jhesucrist, fu nez de Treit, de molt noble ligniee",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1958",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Vie de saint Gilles",
+        "raw_title": "Wauchier de Denain|Vie de saint Gilles|Incipit référence de l'œuvre: Nus crestiens n'est en terre qi Nostre Segneur vueille servir ne amer qi volentiers n'entende et oie cels qi racontent et dient les oevres des seinz homs et les vies q'il menerent",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2000",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Dossier sur saint Nicolas",
+        "raw_title": "Wauchier de Denain|Dossier sur saint Nicolas|Incipit référence de l'œuvre: Mout doit volentiers oir et entendre tote creature qi nostre signour aime et croit les vies et les oevres des seinz",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=2114",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Vie de saint Hilarion",
+        "raw_title": "Wauchier de Denain|Vie de saint Hilarion|Incipit référence de l'œuvre: Saint Hylaires fu nes de Tabathe une ville qui pres est a V liues d'une chité de palestine qui Gase estoit apelee",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=1755",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Wauchier de Denain",
+        "title": "Dialogues de saint Gregoire Ier le Grand",
+        "raw_title": "Wauchier de Denain|Dialogues de saint Gregoire Ier le Grand|Incipit référence de l'œuvre: S. Gregoires nos retraist et dist c'une vile estoit en une des parties de Lombardie si conme prodome et saint home li avoi[en]t conté...",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=9251",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Cisterciens de Vaucelles",
+        "title": "Vie de saint Cucufat",
+        "raw_title": "Cisterciens de Vaucelles|Vie de saint Cucufat|Incipit référence de l'œuvre: Li bons champions Nostre Segneur fui nez de Celistene la citei. Antre lui et saint Felice qui estoient andui de la citei",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=3939",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Thibaut de Vernon",
+        "title": "Chevalier amoureux",
+        "raw_title": "Thibaut de Vernon|Chevalier amoureux|Incipit référence de l'œuvre: Vilains est cil qui set le bien / Quant il n'en mostre aucune rien",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5865",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Thibaut de Vernon",
+        "title": "Clerc de Rouen",
+        "raw_title": "Thibaut de Vernon|Clerc de Rouen|Incipit référence de l'œuvre: En liu de fable et de fablel Orres I miracle molt bel",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=5866",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Clémence de Barking",
+        "title": "Vie de sainte Catherine",
+        "raw_title": "Clémence de Barking|Vie de sainte Catherine|Incipit référence de l'œuvre: Cil qui le bien set et entent / Demustrer le deit sagement / Ke par le fruit de se bonté",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4938",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      },
+      {
+        "author": "Anonyme",
+        "title": "Vie de sainte Marie l'Egyptienne",
+        "raw_title": "Anonyme|Vie de sainte Marie l'Egyptienne|Incipit référence de l'œuvre: Oiés seignor une raison / Ou il ne a se verté non / Faite est et tote de verté",
+        "jonas_oeuvre_url": "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=4749",
+        "folio": "",
+        "date": "",
+        "incipit": "",
+        "explicit": ""
+      }
+    ],
+    "transcription_file": "transcriptions/bnf-fr-23112.html",
+    "date_short": "13e s"
+  }
+]

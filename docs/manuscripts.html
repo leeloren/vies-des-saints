@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index des manuscrits — Vies des Saints</title>
+  <meta name="description" content="Index de tous les manuscrits du corpus, avec métadonnées issues du catalogue Jonas (IRHT–CNRS).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Vies des Saints</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="manuscripts.html" aria-current="page">Manuscrits</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <h1 class="page-title">Index des manuscrits</h1>
+
+    <p style="margin-bottom: var(--space-lg); color: var(--color-text-muted); font-style: italic;">
+      Métadonnées issues du catalogue <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>,
+      mises à jour automatiquement chaque mois. Cliquez sur les en-têtes de colonnes pour trier.
+    </p>
+
+    <!-- Search & filter controls -->
+    <div class="table-controls" role="search" aria-label="Filtrer les manuscrits">
+      <input
+        type="search"
+        id="ms-search"
+        placeholder="Rechercher (cote, lieu d'origine…)"
+        aria-label="Recherche dans les manuscrits"
+        autocomplete="off">
+
+      <select id="ms-filter-support" aria-label="Filtrer par support">
+        <option value="">Tous les supports</option>
+        <option value="Parchemin">Parchemin</option>
+        <option value="Papier">Papier</option>
+      </select>
+
+      <select id="ms-filter-saint" aria-label="Filtrer par saint">
+        <option value="">Tous les saints</option>
+        <option value="saint-martin">Saint Martin</option>
+        <option value="saint-catherine">Sainte Catherine</option>
+        <option value="saint-nicholas">Saint Nicolas</option>
+        <option value="saint-margaret">Sainte Marguerite</option>
+      </select>
+    </div>
+
+    <!-- Manuscript table -->
+    <div class="ms-table-wrap">
+      <table class="ms-table" id="ms-table" aria-live="polite" aria-label="Liste des manuscrits">
+        <thead>
+          <tr>
+            <th class="sortable" data-col="shelfmark" scope="col">
+              Cote <span class="sort-arrow" aria-hidden="true"></span>
+            </th>
+            <th class="sortable" data-col="date_short" scope="col">
+              Siècle <span class="sort-arrow" aria-hidden="true"></span>
+            </th>
+            <th class="sortable" data-col="support" scope="col">
+              Support <span class="sort-arrow" aria-hidden="true"></span>
+            </th>
+            <th class="sortable" data-col="origin" scope="col">
+              Origine <span class="sort-arrow" aria-hidden="true"></span>
+            </th>
+            <th scope="col">Saints</th>
+            <th scope="col">Liens</th>
+          </tr>
+        </thead>
+        <tbody id="ms-table-body">
+          <!-- Populated by manuscripts-table.js -->
+          <tr id="ms-loading-row">
+            <td colspan="6" style="text-align:center; color: var(--color-text-muted); font-style: italic; padding: 2rem;">
+              Chargement des données…
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="ms-count-display" id="ms-count-display" aria-live="polite" aria-atomic="true"></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Projet de recherche sur les manuscrits hagiographiques médiévaux
+      <span class="footer-divider">·</span>
+      Données issues du catalogue <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+  </footer>
+
+  <script src="js/manuscripts-table.js"></script>
+</body>
+</html>

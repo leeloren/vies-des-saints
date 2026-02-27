@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saint Nicolas de Myre — Vies des Saints</title>
+  <meta name="description" content="Présentation de saint Nicolas de Myre et liste des manuscrits contenant sa Vie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="nav-brand" href="../index.html">Vies des Saints</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../manuscripts.html">Manuscrits</a></li>
+        <li><a href="../about.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <article class="saint-article">
+
+      <header class="saint-page-header">
+        <div>
+          <img class="saint-hero-img"
+               src="../images/saint-nicholas.svg"
+               alt="Enluminure de Saint Nicolas de Myre avec ses trois boules d'or"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="saint-hero-fallback" style="display:none;" aria-hidden="true">✝</div>
+        </div>
+        <div class="saint-page-header__text">
+          <h1>Saint Nicolas de Myre</h1>
+          <p class="saint-dates">c. 270–343 apr. J.-C.</p>
+          <p class="saint-feast">Fête&nbsp;: <strong>6 décembre</strong></p>
+          <p>
+            Évêque de Myre en Lycie, thaumaturge et patron des enfants, des marins,
+            et des écoliers. L'une des figures les plus populaires du calendrier
+            médiéval occidental.
+          </p>
+        </div>
+      </header>
+
+      <section class="saint-bio">
+        <h2>Biographie</h2>
+        <p class="drop-cap">
+          Nicolas naquit vers 270 à Patara, en Lycie (actuelle Turquie méridionale),
+          dans une famille aisée qui lui permit de recevoir une éducation chrétienne
+          approfondie. Orphelin de bonne heure, il distribua son héritage aux pauvres,
+          accomplissant l'injonction évangélique à la lettre. Élu évêque de Myre alors
+          qu'il était encore jeune moine, il participa au Concile de Nicée en 325.
+        </p>
+        <p>
+          La tradition médiévale lui attribue de nombreux miracles, dont les plus célèbres
+          sont la résurrection de trois jeunes écoliers que leur hôte avait découpés et mis
+          en saumure, et la dot secrète des trois filles d'un homme ruiné — geste à l'origine
+          de l'iconographie des trois boules d'or. Sa tombe à Myre devint un lieu de
+          pèlerinage, et ses reliques furent translatées à Bari en 1087, donnant naissance
+          à la basilique Saint-Nicolas et à un nouveau foyer de son culte en Occident.
+        </p>
+        <p>
+          En France, le culte de saint Nicolas connut une extraordinaire popularité,
+          notamment en Lorraine, où le <em>Jeu de saint Nicolas</em> de Jean Bodel
+          (fin XIIe–début XIIIe s.) constitue l'un des plus anciens miracles dramatiques
+          en langue d'oïl. Sa Vie en vers fut composée par de nombreux auteurs anonymes
+          et par des écrivains identifiés comme Wace.
+        </p>
+        <p class="todo-note">
+          Compléter avec une présentation des versions vernaculaires recensées dans
+          le corpus.
+        </p>
+      </section>
+
+      <section class="saint-manuscripts">
+        <h2>Manuscrits contenant la Vie de saint Nicolas</h2>
+        <p class="ms-count">1 manuscrit recensé dans cette base</p>
+
+        <ul class="ms-list">
+          <li class="ms-list__item">
+            <div class="ms-list__shelfmark">
+              Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112
+            </div>
+            <div class="ms-list__meta">
+              <span class="meta-badge">XIIIe siècle</span>
+              <span class="meta-badge">Parchemin</span>
+              <span class="meta-badge">Picardie</span>
+              <span class="meta-badge">344 feuillets</span>
+            </div>
+            <div class="ms-list__links">
+              <a href="../transcriptions/bnf-fr-23112.html" class="btn-transcription">
+                Lire la transcription →
+              </a>
+              <a href="https://jonas.irht.cnrs.fr/consulter/manuscrit/detail_manuscrit.php?projet=71291"
+                 target="_blank" rel="noopener" class="ext-link">Jonas</a>
+            </div>
+          </li>
+        </ul>
+
+        <p class="todo-note">
+          Ajouter d'autres manuscrits. Mettre à jour MANUSCRIPT_IDS dans
+          scraper/scrape_jonas.py.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Projet de recherche sur les manuscrits hagiographiques médiévaux
+      <span class="footer-divider">·</span>
+      Données issues du catalogue <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saint Martin de Tours — Vies des Saints</title>
+  <meta name="description" content="Présentation de saint Martin de Tours et liste des manuscrits contenant sa Vie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="nav-brand" href="../index.html">Vies des Saints</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../manuscripts.html">Manuscrits</a></li>
+        <li><a href="../about.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <article class="saint-article">
+
+      <header class="saint-page-header">
+        <div>
+          <img class="saint-hero-img"
+               src="../images/saint-martin.svg"
+               alt="Enluminure de Saint Martin partageant son manteau"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="saint-hero-fallback" style="display:none;" aria-hidden="true">✝</div>
+        </div>
+        <div class="saint-page-header__text">
+          <h1>Saint Martin de Tours</h1>
+          <p class="saint-dates">c. 316–397 apr. J.-C.</p>
+          <p class="saint-feast">Fête&nbsp;: <strong>11 novembre</strong></p>
+          <p>
+            Évêque de Tours, confesseur, apôtre des campagnes gauloises.
+            L'un des saints les plus vénérés du Moyen Âge occidental.
+          </p>
+        </div>
+      </header>
+
+      <!-- Biography section -->
+      <section class="saint-bio">
+        <h2>Biographie</h2>
+        <p class="drop-cap">
+          Martin est né vers 316 à Savaria (actuelle Szombathely, Hongrie), dans une
+          famille de militaires romains. Engagé dans la cavalerie impériale, il accomplit
+          l'acte de charité qui allait définir son iconographie pour des siècles&nbsp;: à
+          Amiens, par temps de grand froid, il partagea son manteau avec un mendiant
+          qu'il retrouva ensuite en songe sous les traits du Christ.
+        </p>
+        <p>
+          Baptisé vers 339, Martin abandonna la vie militaire et se plaça sous la
+          direction de saint Hilaire de Poitiers. Il fonda le premier monastère de Gaule
+          à Ligugé (vers 361), puis fut élu évêque de Tours en 371 contre sa volonté.
+          Depuis son monastère de Marmoutier, fondé peu après son élection, il évangélisa
+          les campagnes de la Loire, détruisant temples et idoles, multipliant miracles et
+          conversions.
+        </p>
+        <p>
+          Mort le 8 novembre 397 à Candes, sa dépouille fut transportée à Tours dans des
+          circonstances miraculeuses, et sa tombe devint rapidement l'un des lieux de
+          pèlerinage les plus fréquentés de l'Occident médiéval. La Vita Martini composée
+          par Sulpice Sévère dès 397, puis ses Dialogues et ses Lettres, établirent le
+          modèle de la biographie hagiographique latine.
+        </p>
+        <p class="todo-note">
+          Ajouter ici une présentation des Vies en ancien français (genres, auteurs,
+          traditions textuelles).
+        </p>
+      </section>
+
+      <!-- Manuscript list -->
+      <section class="saint-manuscripts">
+        <h2>Manuscrits contenant la Vie de saint Martin</h2>
+        <p class="ms-count">1 manuscrit recensé dans cette base</p>
+
+        <ul class="ms-list">
+          <li class="ms-list__item">
+            <div class="ms-list__shelfmark">
+              Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112
+            </div>
+            <div class="ms-list__meta">
+              <span class="meta-badge">XIIIe siècle</span>
+              <span class="meta-badge">Parchemin</span>
+              <span class="meta-badge">Picardie</span>
+              <span class="meta-badge">344 feuillets</span>
+            </div>
+            <div class="ms-list__links">
+              <a href="../transcriptions/bnf-fr-23112.html" class="btn-transcription">
+                Lire la transcription →
+              </a>
+              <a href="https://jonas.irht.cnrs.fr/consulter/manuscrit/detail_manuscrit.php?projet=71291"
+                 target="_blank" rel="noopener" class="ext-link">Jonas</a>
+            </div>
+          </li>
+        </ul>
+
+        <p class="todo-note">
+          Ajouter les autres manuscrits contenant la Vie de saint Martin au fur et à
+          mesure de l'avancement du projet. Mettre à jour la liste de MANUSCRIPT_IDS
+          dans scraper/scrape_jonas.py et relancer le workflow GitHub Actions.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Projet de recherche sur les manuscrits hagiographiques médiévaux
+      <span class="footer-divider">·</span>
+      Données issues du catalogue <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+  </footer>
+
+</body>
+</html>

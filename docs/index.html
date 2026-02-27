@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vies des Saints — Manuscrits hagiographiques médiévaux</title>
+  <meta name="description" content="Éditions numériques des Vies de saints dans les manuscrits médiévaux en langue d'oïl.">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Vies des Saints</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="manuscripts.html">Manuscrits</a></li>
+        <li><a href="about.html">À propos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Site Header ─────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <h1 class="site-title">Vies des Saints</h1>
+    <p class="site-subtitle">Éditions numériques des manuscrits hagiographiques en langue d'oïl</p>
+  </header>
+
+  <!-- ── Saints Grid ─────────────────────────────────────────────────────── -->
+  <main>
+    <section class="saints-section" aria-label="Saints">
+      <p class="saints-section-title">Choisir un saint</p>
+
+      <div class="saints-grid">
+
+        <!-- Saint Martin -->
+        <article class="saint-card">
+          <a href="saints/saint-martin.html" aria-label="Saint Martin de Tours">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-martin.svg"
+                   alt="Enluminure de Saint Martin partageant son manteau"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Saint Martin</h2>
+              <p class="saint-card__desc">Évêque de Tours, apôtre des Gaules · IVe siècle</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Saint Catherine -->
+        <article class="saint-card">
+          <a href="saints/saint-catherine.html" aria-label="Sainte Catherine d'Alexandrie">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-catherine.svg"
+                   alt="Enluminure de Sainte Catherine d'Alexandrie"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Sainte Catherine</h2>
+              <p class="saint-card__desc">Vierge et martyre d'Alexandrie · IVe siècle</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Saint Nicholas -->
+        <article class="saint-card">
+          <a href="saints/saint-nicholas.html" aria-label="Saint Nicolas de Myre">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-nicholas.svg"
+                   alt="Enluminure de Saint Nicolas de Myre"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Saint Nicolas</h2>
+              <p class="saint-card__desc">Évêque de Myre, patron des enfants · IVe siècle</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Saint Margaret -->
+        <article class="saint-card">
+          <a href="saints/saint-margaret.html" aria-label="Sainte Marguerite d'Antioche">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-margaret.svg"
+                   alt="Enluminure de Sainte Marguerite d'Antioche"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Sainte Marguerite</h2>
+              <p class="saint-card__desc">Vierge et martyre d'Antioche · IIIe siècle</p>
+            </div>
+          </a>
+        </article>
+
+      </div><!-- .saints-grid -->
+    </section>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>
+      Projet de recherche sur les manuscrits hagiographiques médiévaux
+      <span class="footer-divider">·</span>
+      Données issues du catalogue <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+    <p style="margin-top: 0.4rem; opacity: 0.7;">[Institution] &nbsp;·&nbsp; [Année]</p>
+  </footer>
+
+</body>
+</html>
