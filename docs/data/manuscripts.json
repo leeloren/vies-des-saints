@@ -4,6 +4,7 @@
     "jonas_url": "https://jonas.irht.cnrs.fr/consulter/manuscrit/detail_manuscrit.php?projet=71291",
     "shelfmark": "Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112",
     "date": "13e s (la date au dernier feuillet, 1200, n'est certainement pas la date du manuscrit)",
+    "date_short": "13e s",
     "language": "oil-français",
     "support": "Parchemin",
     "dimensions": "324 × 228 mm",
@@ -639,7 +640,6 @@
         "explicit": ""
       }
     ],
-    "transcription_file": "transcriptions/bnf-fr-23112.html",
-    "date_short": "13e s"
+    "transcription_file": ""
   }
 ]
