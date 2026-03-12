@@ -215,17 +215,27 @@ a.ext-link::after {
 }
 
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  /* Fallback text style (used if SVG fails to load) */
   color: var(--color-gold);
   font-family: var(--font-display);
   font-size: 1.2rem;
-  text-decoration: none;
   font-style: italic;
   letter-spacing: 0.04em;
-  flex-shrink: 0;
 }
 
-.nav-brand:hover {
-  color: var(--color-gold-light);
+.nav-brand img {
+  height: 44px;
+  width: auto;
+  display: block;
+  transition: opacity 0.15s ease;
+}
+
+.nav-brand:hover img {
+  opacity: 0.82;
 }
 
 .nav-links {
