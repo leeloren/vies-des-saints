@@ -16,9 +16,9 @@
   // Mapping from saint IDs to display labels
   var SAINT_LABELS = {
     'saint-martin':    'Saint Martin',
-    'saint-catherine': 'Sainte Catherine',
-    'saint-nicholas':  'Saint Nicolas',
-    'saint-margaret':  'Sainte Marguerite'
+    'saint-catherine': 'Saint Catherine',
+    'saint-nicholas':  'Saint Nicholas',
+    'saint-margaret':  'Saint Margaret'
   };
 
   // ── Entry point ──────────────────────────────────────────────────────────
@@ -49,9 +49,9 @@
         var tbody = document.getElementById('ms-table-body');
         tbody.innerHTML =
           '<tr><td colspan="6" style="text-align:center; color: var(--color-red); padding: 2rem;">' +
-          'Erreur lors du chargement des données. ' +
-          'Si vous testez en local, lancez un serveur HTTP&nbsp;: ' +
-          '<code>python3 -m http.server 8080</code> depuis le dossier <code>docs/</code>.' +
+          'Error loading data. ' +
+          'If testing locally, start an HTTP server: ' +
+          '<code>python3 -m http.server 8080</code> from the <code>docs/</code> folder.' +
           '</td></tr>';
       });
   }
@@ -64,8 +64,8 @@
     if (data.length === 0) {
       tbody.innerHTML =
         '<tr><td colspan="6" style="text-align:center; color: var(--color-text-muted); ' +
-        'font-style: italic; padding: 2rem;">Aucun manuscrit ne correspond aux critères.</td></tr>';
-      countEl.textContent = '0 manuscrit affiché';
+        'font-style: italic; padding: 2rem;">No manuscripts match the selected criteria.</td></tr>';
+      countEl.textContent = '0 manuscripts displayed';
       return;
     }
 
@@ -96,7 +96,7 @@
     tbody.innerHTML = rows.join('');
 
     var n = data.length;
-    countEl.textContent = n + ' manuscrit' + (n > 1 ? 's' : '') + ' affiché' + (n > 1 ? 's' : '');
+    countEl.textContent = n + ' manuscript' + (n > 1 ? 's' : '') + ' displayed';
   }
 
   // ── Filtering & sorting ──────────────────────────────────────────────────
@@ -124,7 +124,7 @@
     filtered.sort(function (a, b) {
       var valA = String(a[sortCol] || '').toLowerCase();
       var valB = String(b[sortCol] || '').toLowerCase();
-      var cmp = valA.localeCompare(valB, 'fr', { sensitivity: 'base' });
+      var cmp = valA.localeCompare(valB, 'en', { sensitivity: 'base' });
       return sortDir === 'asc' ? cmp : -cmp;
     });
 
