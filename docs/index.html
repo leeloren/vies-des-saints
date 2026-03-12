@@ -60,12 +60,6 @@
     </div>
   </nav>
 
-  <!-- ── Home Hero (title + subtitle) ──────────────────────────────────── -->
-  <header class="home-hero" aria-label="Site title">
-    <h1 class="home-hero__title">Lives of the Saints</h1>
-    <p class="home-hero__subtitle">The Medieval French Hagiography Project</p>
-  </header>
-
   <!-- ── Three-Panel Navigation ──────────────────────────────────────────── -->
   <!--
     TODO: Replace the three SVG placeholder images below with actual high-resolution
@@ -85,7 +79,7 @@
         <div class="home-panel__overlay" aria-hidden="true"></div>
         <div class="home-panel__label">
           <h2>Lives</h2>
-          <p>All textual traditions in the corpus</p>
+          <p>Composed in French between 880 and 1500 CE, approximately 280 surviving stories about Christian saints invite us to reconsider our ideas about medieval spirituality, gender, family dynamics, and more…</p>
         </div>
       </a>
 
@@ -98,7 +92,7 @@
         <div class="home-panel__overlay" aria-hidden="true"></div>
         <div class="home-panel__label">
           <h2>Saints</h2>
-          <p>Browse the corpus by saint</p>
+          <p>Medieval French authors composed stories about 140 Christian saints, ranging from early martyrs like St Catherine and St George to recent figures like St Thomas Becket and St Elisabeth of Hungary…</p>
         </div>
       </a>
 
@@ -111,7 +105,7 @@
         <div class="home-panel__overlay" aria-hidden="true"></div>
         <div class="home-panel__label">
           <h2>Manuscripts</h2>
-          <p>Index of all manuscripts in the corpus</p>
+          <p>The 630 medieval manuscripts preserving saints' Lives in French include some of the most expensive, brilliantly illuminated books of the Middle Ages and plain slips of parchment…</p>
         </div>
       </a>
 
@@ -119,13 +113,44 @@
   </main>
 
   <!-- ── Footer ──────────────────────────────────────────────────────────── -->
-  <footer class="site-footer">
-    <p>
-      A research project on medieval hagiographic manuscripts
-      <span class="footer-divider">·</span>
+  <footer class="site-footer site-footer--home">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Lives of the Saints" class="footer-logo">
+        <p class="footer-desc">The Lives of the Saints Project provides access, guidance, and tools for studying the stories about saints written in French between ca. 880 and ca. 1500 of the common era.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+
+        <div class="footer-nav__col">
+          <a href="transcriptions/bnf-fr-23112.html" class="footer-nav__link">Digital Editions</a>
+        </div>
+
+        <div class="footer-nav__col">
+          <p class="footer-nav__group-label">Inventories</p>
+          <a href="lives.html" class="footer-nav__link footer-nav__link--sub">Lives</a>
+          <a href="saints.html" class="footer-nav__link footer-nav__link--sub">Saints</a>
+          <a href="manuscripts.html" class="footer-nav__link footer-nav__link--sub">Manuscripts</a>
+        </div>
+
+        <div class="footer-nav__col">
+          <a href="search.html" class="footer-nav__link">Search</a>
+          <p class="footer-nav__group-label footer-nav__group-label--divided">About</p>
+          <a href="about.html#objectives" class="footer-nav__link footer-nav__link--sub">Objectives</a>
+          <a href="about.html#editorial-principles" class="footer-nav__link footer-nav__link--sub">Editorial Principles</a>
+          <a href="about.html#team" class="footer-nav__link footer-nav__link--sub">Team</a>
+          <a href="about.html#contact" class="footer-nav__link footer-nav__link--sub">Contact</a>
+        </div>
+
+      </nav>
+
+    </div>
+    <p class="footer-credit">
       Manuscript data from <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+      <span class="footer-divider">·</span>
+      [Institution] &nbsp;·&nbsp; [Year]
     </p>
-    <p style="margin-top: 0.4rem; opacity: 0.7;">[Institution] &nbsp;·&nbsp; [Year]</p>
   </footer>
 
   <script src="js/nav.js"></script>
