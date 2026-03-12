@@ -7,25 +7,25 @@
    1. CSS CUSTOM PROPERTIES
    -------------------------------------------------------------------------- */
 :root {
-  /* Color palette — warm parchment & dark medieval tones */
+  /* Color palette — crimson banners, gold & warm parchment medieval tones */
   --color-parchment:       #f5e6c8;
   --color-parchment-dark:  #e8d5a3;
   --color-parchment-light: #fdf4e0;
   --color-brown:           #2c1810;
   --color-brown-mid:       #5c3d2e;
   --color-brown-light:     #8b6558;
-  --color-gold:            #c89b3c;
+  --color-gold:            #fcc051;
   --color-gold-light:      #e8c97e;
   --color-gold-pale:       #f5e8c0;
-  --color-red:             #8b1a1a;
-  --color-red-dark:        #6b1212;
+  --color-red:             #8c0303;
+  --color-red-dark:        #5c0202;
   --color-text:            #1a0f00;
   --color-text-muted:      #6b5a4e;
 
   /* Typography */
   --font-body:             'Atkinson Hyperlegible', 'Segoe UI', Arial, sans-serif;
-  --font-display:          Georgia, 'Times New Roman', serif;
-  --font-transcription:    'JunicodeVF', 'Junicode', Georgia, 'Times New Roman', serif;
+  --font-display:          'Atkinson Hyperlegible', 'Segoe UI', Arial, sans-serif;
+  --font-transcription:    'JunicodeVF', 'Junicode', 'Atkinson Hyperlegible', Arial, sans-serif;
 
   /* Spacing */
   --space-xs:   0.25rem;
@@ -105,7 +105,7 @@ body {
 a {
   color: var(--color-red);
   text-decoration: underline;
-  text-decoration-color: rgba(139, 26, 26, 0.4);
+  text-decoration-color: rgba(140, 3, 3, 0.4);
   text-underline-offset: 2px;
   transition: color 0.15s, text-decoration-color 0.15s;
 }
@@ -187,7 +187,7 @@ p:last-child {
 /* External link indicator */
 a.ext-link::after {
   content: ' ↗';
-  font-size: 0.75em;
+  font-size: 1em;
   opacity: 0.7;
 }
 
@@ -196,7 +196,7 @@ a.ext-link::after {
    5. NAVIGATION
    -------------------------------------------------------------------------- */
 .site-nav {
-  background-color: var(--color-brown);
+  background-color: var(--color-red);
   border-bottom: var(--border-gold3);
   position: sticky;
   top: 0;
@@ -236,7 +236,7 @@ a.ext-link::after {
 .nav-links a {
   color: var(--color-parchment);
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   opacity: 0.88;
@@ -297,7 +297,7 @@ a.ext-link::after {
 
 .site-subtitle {
   color: var(--color-text-muted);
-  font-size: clamp(0.9rem, 2vw, 1.15rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   font-style: italic;
   letter-spacing: 0.04em;
 }
@@ -387,7 +387,7 @@ a.ext-link::after {
 
 .saint-card__info {
   padding: var(--space-md) var(--space-md) calc(var(--space-md) * 1.2);
-  background-color: var(--color-brown);
+  background-color: #26150f;
   color: var(--color-parchment);
 }
 
@@ -399,7 +399,7 @@ a.ext-link::after {
 }
 
 .saint-card__desc {
-  font-size: 0.82rem;
+  font-size: 1rem;
   color: var(--color-parchment-dark);
   font-style: italic;
   line-height: 1.4;
@@ -469,14 +469,14 @@ a.ext-link::after {
 }
 
 .saint-dates {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
   font-style: italic;
   margin-bottom: var(--space-xs);
 }
 
 .saint-feast {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
   font-style: italic;
   margin-bottom: var(--space-md);
@@ -502,7 +502,7 @@ a.ext-link::after {
 
 /* Manuscript list on saint pages */
 .ms-count {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
   font-style: italic;
   margin-bottom: var(--space-md);
@@ -546,7 +546,7 @@ a.ext-link::after {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
-  font-size: 0.82rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
   align-items: center;
 }
@@ -556,7 +556,7 @@ a.ext-link::after {
   border: 1px solid rgba(200, 155, 60, 0.4);
   border-radius: 3px;
   padding: 1px 8px;
-  font-size: 0.78rem;
+  font-size: 1rem;
 }
 
 .ms-list__links {
@@ -570,7 +570,7 @@ a.ext-link::after {
 }
 
 .ms-list__links a {
-  font-size: 0.82rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
@@ -580,7 +580,7 @@ a.ext-link::after {
   text-decoration: none !important;
   padding: 4px 12px;
   border-radius: var(--radius);
-  font-size: 0.82rem !important;
+  font-size: 1rem !important;
   transition: background-color 0.15s;
   display: inline-block;
 }
@@ -608,7 +608,7 @@ a.ext-link::after {
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.55);
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-text);
   outline: none;
   transition: border-color 0.15s, box-shadow 0.15s;
@@ -617,7 +617,7 @@ a.ext-link::after {
 .table-controls input[type="search"]:focus,
 .table-controls select:focus {
   border-color: var(--color-red);
-  box-shadow: 0 0 0 2px rgba(139, 26, 26, 0.15);
+  box-shadow: 0 0 0 2px rgba(140, 3, 3, 0.15);
 }
 
 .table-controls input[type="search"] {
@@ -634,12 +634,12 @@ a.ext-link::after {
 .ms-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 1rem;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .ms-table thead {
-  background-color: var(--color-brown);
+  background-color: var(--color-red);
 }
 
 .ms-table th {
@@ -666,7 +666,7 @@ a.ext-link::after {
 .sort-arrow {
   display: inline-block;
   margin-left: 4px;
-  font-size: 0.75em;
+  font-size: 1em;
   opacity: 0.6;
 }
 
@@ -695,18 +695,18 @@ a.ext-link::after {
 
 .ms-count-display {
   margin-top: var(--space-md);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
   font-style: italic;
 }
 
 .saint-tag {
   display: inline-block;
-  background: rgba(139, 26, 26, 0.08);
-  border: 1px solid rgba(139, 26, 26, 0.25);
+  background: rgba(140, 3, 3, 0.08);
+  border: 1px solid rgba(140, 3, 3, 0.25);
   border-radius: 3px;
   padding: 1px 7px;
-  font-size: 0.78rem;
+  font-size: 1rem;
   margin: 1px 2px;
   color: var(--color-red-dark);
 }
@@ -751,7 +751,7 @@ a.ext-link::after {
 }
 
 .meta-label {
-  font-size: 0.72rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   color: var(--color-text-muted);
@@ -762,14 +762,14 @@ a.ext-link::after {
   font-family: var(--font-display);
   font-style: italic;
   color: var(--color-brown);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .transcription-ext-links {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /* The transcription text itself — Junicode */
@@ -793,13 +793,13 @@ a.ext-link::after {
 
 .folio-marker {
   font-family: var(--font-body);
-  font-size: 0.72rem;
+  font-size: 1rem;
   color: var(--color-red);
   text-transform: uppercase;
   letter-spacing: 0.10em;
   margin: var(--space-lg) 0 var(--space-xs);
   padding-top: var(--space-xs);
-  border-top: 1px solid rgba(139, 26, 26, 0.25);
+  border-top: 1px solid rgba(140, 3, 3, 0.25);
   display: block;
 }
 
@@ -815,7 +815,7 @@ a.ext-link::after {
 }
 
 .transcription-notes p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
 }
 
@@ -850,7 +850,7 @@ a.ext-link::after {
   border: 1px dashed var(--color-gold);
   border-radius: var(--radius);
   padding: var(--space-sm) var(--space-md);
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-brown-mid);
   font-style: italic;
   margin-bottom: var(--space-md);
@@ -867,12 +867,12 @@ a.ext-link::after {
    13. FOOTER
    -------------------------------------------------------------------------- */
 .site-footer {
-  background-color: var(--color-brown);
+  background-color: var(--color-red);
   color: var(--color-parchment-dark);
   text-align: center;
   padding: var(--space-lg);
   margin-top: auto;
-  font-size: 0.82rem;
+  font-size: 1rem;
   border-top: var(--border-gold3);
   line-height: 1.7;
 }
