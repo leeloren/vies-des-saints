@@ -1,184 +1,176 @@
-# Vies des Saints — Manuscrits hagiographiques médiévaux
+# Lives of the Saints — Medieval French Hagiographic Manuscripts
 
-Prototype d'un site web de recherche pour les éditions numériques des Vies de saints
-dans les manuscrits médiévaux en langue d'oïl.
+Research website for digital editions of saints' Lives from medieval manuscripts
+in Old and Middle French (langue d'oïl).
 
 ---
 
-## Structure du projet
+## Project structure
 
 ```
 vies-des-saints/
-├── .github/workflows/scrape-jonas.yml   ← Automatisation (GitHub Actions)
-├── docs/                                ← Site web (servi par GitHub Pages)
-│   ├── index.html                       ← Page d'accueil (grille de saints)
-│   ├── manuscripts.html                 ← Index des manuscrits (données Jonas)
-│   ├── about.html                       ← À propos du projet
-│   ├── css/style.css                    ← Styles (design médiéval)
-│   ├── fonts/                           ← Police Junicode (à ajouter manuellement)
-│   ├── images/                          ← Images des saints (SVG placeholder)
-│   ├── js/manuscripts-table.js          ← Table triable/filtrable
-│   ├── saints/                          ← Pages individuelles par saint
-│   ├── transcriptions/                  ← Transcriptions numériques
-│   └── data/manuscripts.json           ← Données scrappées de Jonas (auto-généré)
+├── .github/workflows/scrape-jonas.yml   ← Automation (GitHub Actions)
+├── docs/                                ← Website (served by GitHub Pages)
+│   ├── index.html                       ← Homepage (3 panels: Lives / Saints / Manuscripts)
+│   ├── saints.html                      ← Browse-by-saint grid (former homepage)
+│   ├── lives.html                       ← Table of contents for all Lives (placeholder)
+│   ├── manuscripts.html                 ← Manuscript index (Jonas data)
+│   ├── search.html                      ← Site search (placeholder)
+│   ├── about.html                       ← About the project
+│   ├── css/style.css                    ← Styles (medieval design system)
+│   ├── fonts/                           ← Junicode font (must be added manually)
+│   ├── images/                          ← Saint and panel images (SVG placeholders)
+│   ├── js/manuscripts-table.js          ← Sortable/filterable table
+│   ├── js/nav.js                        ← Dropdown navigation logic
+│   ├── saints/                          ← Individual saint pages
+│   ├── transcriptions/                  ← Digital transcriptions
+│   └── data/manuscripts.json           ← Data scraped from Jonas (auto-generated)
 └── scraper/
-    ├── scrape_jonas.py                  ← Script de scraping
+    ├── scrape_jonas.py                  ← Scraping script
     └── requirements.txt
 ```
 
 ---
 
-## Mise en place — Guide pas à pas pour débutants
+## Setup — Step-by-step guide for beginners
 
-### Étape 1 : Créer un compte GitHub (si vous n'en avez pas)
+### Step 1: Create a GitHub account (if you don't have one)
 
-1. Allez sur [github.com](https://github.com) et cliquez sur **Sign up**
-2. Remplissez le formulaire et confirmez votre adresse e-mail
-3. Choisissez le plan **Free**
-
----
-
-### Étape 2 : Créer un nouveau dépôt
-
-1. Sur votre page GitHub, cliquez sur le bouton vert **New** (ou allez sur github.com/new)
-2. **Repository name** : choisissez un nom, par exemple `vies-des-saints`
-3. **Visibility** : choisissez **Public** (obligatoire pour GitHub Pages gratuit)
-4. Cochez **Add a README file**
-5. Cliquez sur **Create repository**
+1. Go to [github.com](https://github.com) and click **Sign up**
+2. Fill in the form and confirm your email address
+3. Choose the **Free** plan
 
 ---
 
-### Étape 3 : Installer GitHub Desktop
+### Step 2: Create a new repository
 
-GitHub Desktop est une application gratuite qui vous permet de gérer votre dépôt
-sans ligne de commande.
-
-1. Téléchargez-la sur [desktop.github.com](https://desktop.github.com)
-2. Installez-la et connectez-vous avec votre compte GitHub
-3. Cliquez sur **Clone a repository from the Internet...**
-4. Choisissez votre dépôt `vies-des-saints` et sélectionnez un dossier sur votre ordinateur
-5. Cliquez sur **Clone**
+1. On your GitHub page, click the green **New** button (or go to github.com/new)
+2. **Repository name**: choose a name, e.g. `vies-des-saints`
+3. **Visibility**: choose **Public** (required for free GitHub Pages)
+4. Check **Add a README file**
+5. Click **Create repository**
 
 ---
 
-### Étape 4 : Copier les fichiers du projet
+### Step 3: Install GitHub Desktop
 
-1. Ouvrez le dossier où vous avez cloné le dépôt
-2. Copiez tous les fichiers et dossiers de ce projet dans ce dossier :
-   - `.github/` (dossier caché — assurez-vous qu'il est inclus)
+GitHub Desktop is a free application that lets you manage your repository
+without using the command line.
+
+1. Download it from [desktop.github.com](https://desktop.github.com)
+2. Install it and sign in with your GitHub account
+3. Click **Clone a repository from the Internet...**
+4. Choose your `vies-des-saints` repository and select a folder on your computer
+5. Click **Clone**
+
+---
+
+### Step 4: Copy the project files
+
+1. Open the folder where you cloned the repository
+2. Copy all files and folders from this project into that folder:
+   - `.github/` (hidden folder — make sure it is included)
    - `docs/`
    - `scraper/`
    - `README.md`
-3. Dans GitHub Desktop, vous verrez tous ces fichiers listés sous **Changes**
-4. Tapez un message dans le champ **Summary**, par exemple : `Initial commit`
-5. Cliquez sur **Commit to main**
-6. Cliquez sur **Push origin** pour envoyer les fichiers sur GitHub
+3. In GitHub Desktop, you will see all these files listed under **Changes**
+4. Type a message in the **Summary** field, e.g.: `Initial commit`
+5. Click **Commit to main**
+6. Click **Push origin** to send the files to GitHub
 
 ---
 
-### Étape 5 : Configurer GitHub Pages
+### Step 5: Configure GitHub Pages
 
-1. Sur GitHub, ouvrez votre dépôt et cliquez sur l'onglet **Settings** ⚙
-2. Dans la barre gauche, cliquez sur **Pages**
-3. Sous **Source**, choisissez **Deploy from a branch**
-4. Sous **Branch**, sélectionnez **main** et le dossier **/ (docs)**
-5. Cliquez sur **Save**
-6. Attendez 1–2 minutes. GitHub affichera l'URL de votre site :
-   `https://VOTRE-NOM.github.io/vies-des-saints/`
+1. On GitHub, open your repository and click the **Settings** ⚙ tab
+2. In the left sidebar, click **Pages**
+3. Under **Source**, choose **Deploy from a branch**
+4. Under **Branch**, select **main** and the folder **/ (docs)**
+5. Click **Save**
+6. Wait 1–2 minutes. GitHub will display your site URL:
+   `https://YOUR-USERNAME.github.io/vies-des-saints/`
 
 ---
 
-### Étape 6 : Mettre à jour le `<base href>` dans les fichiers HTML
+### Step 6: Test the site locally
 
-Pour que les liens fonctionnent correctement sur GitHub Pages, ouvrez chaque fichier
-HTML dans `docs/` (et ses sous-dossiers) et remplacez la ligne commentée :
+The site uses relative paths and works without any additional configuration.
+To test locally, start an HTTP server from the `docs/` folder:
 
-```html
-<!-- <base href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/"> -->
+```bash
+cd docs
+python3 -m http.server 8080
 ```
 
-par (en retirant les `<!--` et `-->` et en remplaçant les placeholders) :
-
-```html
-<base href="https://VOTRE-NOM.github.io/vies-des-saints/">
-```
-
-Faites cela pour tous les fichiers HTML, puis committez et pushez via GitHub Desktop.
-
-> **Astuce** : Pour tester en local sans modifier le `<base href>`, lancez un serveur
-> HTTP local depuis le dossier `docs/` :
-> ```bash
-> python3 -m http.server 8080
-> ```
-> Puis ouvrez `http://localhost:8080` dans votre navigateur.
+Then open `http://localhost:8080` in your browser.
 
 ---
 
-### Étape 7 : Ajouter la police Junicode
+### Step 7: Add the Junicode font
 
-La police Junicode est utilisée pour les transcriptions. Elle doit être téléchargée et
-placée dans `docs/fonts/`.
+The Junicode font is used for transcriptions. It must be downloaded and
+placed in `docs/fonts/`.
 
-1. Allez sur [github.com/psb1558/Junicode-font/releases](https://github.com/psb1558/Junicode-font/releases)
-2. Téléchargez la dernière version (fichier `.zip`)
-3. Décompressez le ZIP et ouvrez le dossier `webfiles/` (ou `webfonts/`)
-4. Copiez `JunicodeVF-Roman.woff2` et `JunicodeVF-Italic.woff2` dans `docs/fonts/`
-5. Committez et pushez via GitHub Desktop
-
----
-
-### Étape 8 : Lancer le scraper manuellement
-
-1. Sur GitHub, cliquez sur l'onglet **Actions**
-2. Dans la liste à gauche, cliquez sur **Scrape Jonas Catalog**
-3. Cliquez sur le bouton **Run workflow** → **Run workflow**
-4. Attendez environ 30 secondes
-5. Une coche verte ✓ indique que tout s'est bien passé et que `manuscripts.json` a été mis à jour
+1. Go to [github.com/psb1558/Junicode-font/releases](https://github.com/psb1558/Junicode-font/releases)
+2. Download the latest release (`.zip` file)
+3. Unzip it and open the `webfiles/` (or `webfonts/`) folder
+4. Copy `JunicodeVF-Roman.woff2` and `JunicodeVF-Italic.woff2` into `docs/fonts/`
+5. Commit and push via GitHub Desktop
 
 ---
 
-## Ajouter des manuscrits
+### Step 8: Run the scraper manually
 
-Pour ajouter un manuscrit au corpus :
+1. On GitHub, click the **Actions** tab
+2. In the left list, click **Scrape Jonas Catalog**
+3. Click the **Run workflow** button → **Run workflow**
+4. Wait about 30 seconds
+5. A green checkmark ✓ means everything worked and `manuscripts.json` has been updated
 
-1. Recherchez le manuscrit sur [jonas.irht.cnrs.fr](https://jonas.irht.cnrs.fr)
-2. Ouvrez la page de détail et notez le numéro dans l'URL : `...?projet=XXXXX`
-3. Ouvrez `scraper/scrape_jonas.py` dans un éditeur de texte
-4. Ajoutez le numéro à la liste `MANUSCRIPT_IDS` :
+---
+
+## Adding manuscripts
+
+To add a manuscript to the corpus:
+
+1. Search for the manuscript on [jonas.irht.cnrs.fr](https://jonas.irht.cnrs.fr)
+2. Open the detail page and note the number in the URL: `...?projet=XXXXX`
+3. Open `scraper/scrape_jonas.py` in a text editor
+4. Add the number to the `MANUSCRIPT_IDS` list:
    ```python
    MANUSCRIPT_IDS = [
        71291,
-       XXXXX,  # Nouveau manuscrit
+       XXXXX,  # New manuscript
    ]
    ```
-5. Committez et pushez, puis relancez le workflow (Étape 8)
+5. Commit and push, then re-run the workflow (Step 8)
 
 ---
 
-## Test local (développeurs)
+## Local development (developers)
 
 ```bash
-# Créer l'environnement virtuel Python
+# Create the Python virtual environment
 python3 -m venv .venv
 source .venv/bin/activate      # Mac/Linux
 # .venv\Scripts\activate.bat   # Windows
 
-# Installer les dépendances
+# Install dependencies
 pip install -r scraper/requirements.txt
 
-# Lancer le scraper
+# Run the scraper
 python scraper/scrape_jonas.py
 
-# Tester le site en local
+# Test the site locally
 cd docs
 python3 -m http.server 8080
-# Ouvrir http://localhost:8080
+# Open http://localhost:8080
 ```
 
 ---
 
 ## Sources
 
-- Catalogue Jonas (IRHT–CNRS) : [jonas.irht.cnrs.fr](https://jonas.irht.cnrs.fr)
-- Police Junicode : [github.com/psb1558/Junicode-font](https://github.com/psb1558/Junicode-font)
-- Police Atkinson Hyperlegible : [Google Fonts](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
+- Jonas Catalog (IRHT–CNRS): [jonas.irht.cnrs.fr](https://jonas.irht.cnrs.fr)
+- Junicode font: [github.com/psb1558/Junicode-font](https://github.com/psb1558/Junicode-font)
+- Atkinson Hyperlegible font: [Google Fonts](https://fonts.google.com/specimen/Atkinson+Hyperlegible)
