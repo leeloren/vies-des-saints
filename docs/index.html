@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lives of the Saints — Medieval French Hagiographic Manuscripts</title>
-  <meta name="description" content="Digital editions of saints' Lives from medieval French manuscripts (langue d'oïl).">
-
+  <meta name="description" content="Digital editions of saints' Lives from medieval French manuscripts (langue d'oïl). Browse by Life, Saint, or Manuscript.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,91 +18,101 @@
     <div class="nav-inner">
       <a class="nav-brand" href="index.html">Lives of the Saints</a>
       <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="manuscripts.html">Manuscripts</a></li>
-        <li><a href="about.html">About</a></li>
+
+        <!-- Digital Editions -->
+        <!-- TODO: Replace this link with a proper editions index page once multiple
+             transcriptions are available. For now it links to the single available
+             transcription (BnF fr. 23112). -->
+        <li><a href="transcriptions/bnf-fr-23112.html">Digital Editions</a></li>
+
+        <!-- Inventories dropdown -->
+        <li class="nav-item--dropdown">
+          <a href="#" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Inventories <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="lives.html">Lives</a></li>
+            <li><a href="saints.html">Saints</a></li>
+            <li><a href="manuscripts.html">Manuscripts</a></li>
+          </ul>
+        </li>
+
+        <!-- Search -->
+        <!-- TODO: Build full-text search functionality (see search.html placeholder). -->
+        <li><a href="search.html">Search</a></li>
+
+        <!-- About dropdown -->
+        <li class="nav-item--dropdown">
+          <a href="about.html" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            About <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="about.html#objectives">Objectives</a></li>
+            <li><a href="about.html#editorial-principles">Editorial Principles</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
+
       </ul>
     </div>
   </nav>
 
-  <!-- ── Site Header ─────────────────────────────────────────────────────── -->
-  <header class="site-header">
-    <h1 class="site-title">Lives of the Saints</h1>
-    <p class="site-subtitle">The Medieval French Hagiography Project</p>
+  <!-- ── Home Hero (title + subtitle) ──────────────────────────────────── -->
+  <header class="home-hero" aria-label="Site title">
+    <h1 class="home-hero__title">Lives of the Saints</h1>
+    <p class="home-hero__subtitle">The Medieval French Hagiography Project</p>
   </header>
 
-  <!-- ── Saints Grid ─────────────────────────────────────────────────────── -->
-  <main>
-    <section class="saints-section" aria-label="Saints">
-      <p class="saints-section-title">Browse by Saint</p>
+  <!-- ── Three-Panel Navigation ──────────────────────────────────────────── -->
+  <!--
+    TODO: Replace the three SVG placeholder images below with actual high-resolution
+    manuscript illumination images (e.g. from Wikimedia Commons or a partnering library).
+    Recommended format: JPEG or WebP, minimum 800 × 1200 px per panel.
+    Suggested sources: Gallica (BnF), e-codices (Switzerland), Bodleian Digital Library.
+  -->
+  <main class="home-panels-main" aria-label="Site sections">
+    <section class="home-panels">
 
-      <div class="saints-grid">
+      <!-- Panel 1: Lives -->
+      <a href="lives.html" class="home-panel" aria-label="Go to Lives — table of contents of all saints' Lives">
+        <img
+          class="home-panel__img"
+          src="images/panel-lives.svg"
+          alt="A wise old scribe writing on a scroll by candlelight">
+        <div class="home-panel__overlay" aria-hidden="true"></div>
+        <div class="home-panel__label">
+          <h2>Lives</h2>
+          <p>All textual traditions in the corpus</p>
+        </div>
+      </a>
 
-        <!-- Saint Martin -->
-        <article class="saint-card">
-          <a href="saints/saint-martin.html" aria-label="Saint Martin of Tours">
-            <div class="saint-card__image-wrap">
-              <img src="images/saint-martin.svg"
-                   alt="Illuminated image of Saint Martin dividing his cloak"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
-            </div>
-            <div class="saint-card__info">
-              <h2 class="saint-card__name">Saint Martin</h2>
-              <p class="saint-card__desc">Bishop of Tours, Apostle of the Gauls · 4th century</p>
-            </div>
-          </a>
-        </article>
+      <!-- Panel 2: Saints -->
+      <a href="saints.html" class="home-panel" aria-label="Go to Saints — browse by saint">
+        <img
+          class="home-panel__img"
+          src="images/panel-saints.svg"
+          alt="Saint Margaret of Antioch bursting triumphantly from the dragon">
+        <div class="home-panel__overlay" aria-hidden="true"></div>
+        <div class="home-panel__label">
+          <h2>Saints</h2>
+          <p>Browse the corpus by saint</p>
+        </div>
+      </a>
 
-        <!-- Saint Catherine -->
-        <article class="saint-card">
-          <a href="saints/saint-catherine.html" aria-label="Saint Catherine of Alexandria">
-            <div class="saint-card__image-wrap">
-              <img src="images/saint-catherine.svg"
-                   alt="Illuminated image of Saint Catherine of Alexandria"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
-            </div>
-            <div class="saint-card__info">
-              <h2 class="saint-card__name">Saint Catherine</h2>
-              <p class="saint-card__desc">Virgin and martyr of Alexandria · 4th century</p>
-            </div>
-          </a>
-        </article>
+      <!-- Panel 3: Manuscripts -->
+      <a href="manuscripts.html" class="home-panel" aria-label="Go to Manuscripts — index of all manuscripts">
+        <img
+          class="home-panel__img"
+          src="images/panel-manuscripts.svg"
+          alt="A nun reading a manuscript as an angel guides her reading">
+        <div class="home-panel__overlay" aria-hidden="true"></div>
+        <div class="home-panel__label">
+          <h2>Manuscripts</h2>
+          <p>Index of all manuscripts in the corpus</p>
+        </div>
+      </a>
 
-        <!-- Saint Nicholas -->
-        <article class="saint-card">
-          <a href="saints/saint-nicholas.html" aria-label="Saint Nicholas of Myra">
-            <div class="saint-card__image-wrap">
-              <img src="images/saint-nicholas.svg"
-                   alt="Illuminated image of Saint Nicholas of Myra"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
-            </div>
-            <div class="saint-card__info">
-              <h2 class="saint-card__name">Saint Nicholas</h2>
-              <p class="saint-card__desc">Bishop of Myra, patron of children · 4th century</p>
-            </div>
-          </a>
-        </article>
-
-        <!-- Saint Margaret -->
-        <article class="saint-card">
-          <a href="saints/saint-margaret.html" aria-label="Saint Margaret of Antioch">
-            <div class="saint-card__image-wrap">
-              <img src="images/saint-margaret.svg"
-                   alt="Illuminated image of Saint Margaret of Antioch slaying the dragon"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
-            </div>
-            <div class="saint-card__info">
-              <h2 class="saint-card__name">Saint Margaret</h2>
-              <p class="saint-card__desc">Virgin and martyr of Antioch · 3rd century</p>
-            </div>
-          </a>
-        </article>
-
-      </div><!-- .saints-grid -->
     </section>
   </main>
 
@@ -117,5 +126,6 @@
     <p style="margin-top: 0.4rem; opacity: 0.7;">[Institution] &nbsp;·&nbsp; [Year]</p>
   </footer>
 
+  <script src="js/nav.js"></script>
 </body>
 </html>

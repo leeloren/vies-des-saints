@@ -16,9 +16,34 @@
     <div class="nav-inner">
       <a class="nav-brand" href="index.html">Lives of the Saints</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="manuscripts.html">Manuscripts</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
+
+        <li><a href="transcriptions/bnf-fr-23112.html">Digital Editions</a></li>
+
+        <li class="nav-item--dropdown">
+          <a href="#" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Inventories <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="lives.html">Lives</a></li>
+            <li><a href="saints.html">Saints</a></li>
+            <li><a href="manuscripts.html">Manuscripts</a></li>
+          </ul>
+        </li>
+
+        <li><a href="search.html">Search</a></li>
+
+        <li class="nav-item--dropdown">
+          <a href="about.html" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" aria-current="page">
+            About <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="about.html#objectives">Objectives</a></li>
+            <li><a href="about.html#editorial-principles">Editorial Principles</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
+
       </ul>
     </div>
   </nav>
@@ -26,7 +51,7 @@
   <main class="page-main">
     <h1 class="page-title">About the Project</h1>
 
-    <section class="about-section">
+    <section class="about-section" id="objectives">
       <h2>Objectives</h2>
       <p class="drop-cap todo-note">
         Describe the scholarly objectives of the project here (corpus, method,
@@ -47,7 +72,7 @@
 
     <hr class="divider">
 
-    <section class="about-section">
+    <section class="about-section" id="editorial-principles">
       <h2>Editorial Principles</h2>
       <p>
         Transcriptions are produced according to the conventions of philological
@@ -65,7 +90,7 @@
 
     <hr class="divider">
 
-    <section class="about-section">
+    <section class="about-section" id="team">
       <h2>Team</h2>
       <ul class="team-list">
         <li>[Name, title, institution]</li>
@@ -116,7 +141,7 @@
 
     <hr class="divider">
 
-    <section class="about-section">
+    <section class="about-section" id="contact">
       <h2>Contact</h2>
       <p class="todo-note">
         Add contact information (email, institution).
@@ -133,5 +158,6 @@
     </p>
   </footer>
 
+  <script src="js/nav.js"></script>
 </body>
 </html>

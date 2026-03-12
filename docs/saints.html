@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saints — Lives of the Saints</title>
+  <meta name="description" content="Browse the corpus by saint. Digital editions of saints' Lives from medieval French manuscripts (langue d'oïl).">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Lives of the Saints</a>
+      <ul class="nav-links">
+
+        <li><a href="transcriptions/bnf-fr-23112.html">Digital Editions</a></li>
+
+        <li class="nav-item--dropdown">
+          <a href="#" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Inventories <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="lives.html">Lives</a></li>
+            <li><a href="saints.html" aria-current="page">Saints</a></li>
+            <li><a href="manuscripts.html">Manuscripts</a></li>
+          </ul>
+        </li>
+
+        <li><a href="search.html">Search</a></li>
+
+        <li class="nav-item--dropdown">
+          <a href="about.html" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            About <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="about.html#objectives">Objectives</a></li>
+            <li><a href="about.html#editorial-principles">Editorial Principles</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Site Header ─────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <h1 class="site-title">Lives of the Saints</h1>
+    <p class="site-subtitle">The Medieval French Hagiography Project</p>
+  </header>
+
+  <!-- ── Saints Grid ─────────────────────────────────────────────────────── -->
+  <main>
+    <section class="saints-section" aria-label="Saints">
+      <p class="saints-section-title">Browse by Saint</p>
+
+      <!-- TODO: Add new saint cards here as more saints are incorporated into the corpus.
+           Also consider generating this list dynamically from manuscripts.json (scraper data). -->
+
+      <div class="saints-grid">
+
+        <!-- Saint Martin -->
+        <article class="saint-card">
+          <a href="saints/saint-martin.html" aria-label="Saint Martin of Tours">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-martin.svg"
+                   alt="Illuminated image of Saint Martin dividing his cloak"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Saint Martin</h2>
+              <p class="saint-card__desc">Bishop of Tours, Apostle of the Gauls · 4th century</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Saint Catherine -->
+        <article class="saint-card">
+          <a href="saints/saint-catherine.html" aria-label="Saint Catherine of Alexandria">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-catherine.svg"
+                   alt="Illuminated image of Saint Catherine of Alexandria"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Saint Catherine</h2>
+              <p class="saint-card__desc">Virgin and martyr of Alexandria · 4th century</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Saint Nicholas -->
+        <article class="saint-card">
+          <a href="saints/saint-nicholas.html" aria-label="Saint Nicholas of Myra">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-nicholas.svg"
+                   alt="Illuminated image of Saint Nicholas of Myra"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Saint Nicholas</h2>
+              <p class="saint-card__desc">Bishop of Myra, patron of children · 4th century</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Saint Margaret -->
+        <article class="saint-card">
+          <a href="saints/saint-margaret.html" aria-label="Saint Margaret of Antioch">
+            <div class="saint-card__image-wrap">
+              <img src="images/saint-margaret.svg"
+                   alt="Illuminated image of Saint Margaret of Antioch slaying the dragon"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="saint-card__image-fallback" style="display:none;" aria-hidden="true">✝</div>
+            </div>
+            <div class="saint-card__info">
+              <h2 class="saint-card__name">Saint Margaret</h2>
+              <p class="saint-card__desc">Virgin and martyr of Antioch · 3rd century</p>
+            </div>
+          </a>
+        </article>
+
+      </div><!-- .saints-grid -->
+    </section>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>
+      A research project on medieval hagiographic manuscripts
+      <span class="footer-divider">·</span>
+      Manuscript data from <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+    <p style="margin-top: 0.4rem; opacity: 0.7;">[Institution] &nbsp;·&nbsp; [Year]</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

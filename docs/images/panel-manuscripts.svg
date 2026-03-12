@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="ms-bg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#4a3010"/>
+      <stop offset="100%" stop-color="#150a00"/>
+    </radialGradient>
+    <radialGradient id="ms-glow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#fcc051" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#fcc051" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="angel-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8d5a3" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e8d5a3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="page-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8d5a3"/>
+      <stop offset="50%" stop-color="#fdf4e0"/>
+      <stop offset="100%" stop-color="#e8d5a3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#ms-bg)"/>
+  <ellipse cx="200" cy="340" rx="170" ry="195" fill="url(#ms-glow)"/>
+
+  <!-- ANGEL WINGS (spread behind and above scene) -->
+  <!-- Left wing (large, feathered) -->
+  <path d="M 200 220 Q 155 190 100 155 Q 60 135 35 150 Q 55 175 85 195
+           Q 115 215 145 230 Q 170 240 200 245 Z"
+        fill="#f5e6c8" stroke="#e8c97e" stroke-width="1.5" opacity="0.88"/>
+  <!-- Left wing feather lines -->
+  <path d="M 200 245 Q 160 225 110 195" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 200 245 Q 165 232 122 208" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M 200 245 Q 172 238 138 220" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.3"/>
+  <!-- Left wing secondary layer -->
+  <path d="M 200 245 Q 162 240 120 230 Q 80 220 55 215 Q 75 235 105 248
+           Q 145 258 185 258 Q 195 255 200 252 Z"
+        fill="#fdf4e0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+
+  <!-- Right wing (angel, pointing toward nun/book) -->
+  <path d="M 200 220 Q 245 190 300 155 Q 340 135 365 150 Q 345 175 315 195
+           Q 285 215 255 230 Q 230 240 200 245 Z"
+        fill="#f5e6c8" stroke="#e8c97e" stroke-width="1.5" opacity="0.88"/>
+  <!-- Right wing feather lines -->
+  <path d="M 200 245 Q 240 225 290 195" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 200 245 Q 235 232 278 208" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M 200 245 Q 228 238 262 220" stroke="#c9a96e" stroke-width="1" fill="none" opacity="0.3"/>
+  <!-- Right wing secondary layer -->
+  <path d="M 200 245 Q 238 240 280 230 Q 320 220 345 215 Q 325 235 295 248
+           Q 255 258 215 258 Q 205 255 200 252 Z"
+        fill="#fdf4e0" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+
+  <!-- Angel glow (body glow) -->
+  <ellipse cx="200" cy="265" rx="65" ry="80" fill="url(#angel-glow)"/>
+
+  <!-- READING DESK / LECTERN (lower center) -->
+  <!-- Desk legs -->
+  <rect x="148" y="440" width="12" height="100" rx="4" fill="#3a2010"/>
+  <rect x="240" y="440" width="12" height="100" rx="4" fill="#3a2010"/>
+  <!-- Cross brace -->
+  <rect x="148" y="490" width="104" height="8" rx="3" fill="#2c1810"/>
+  <!-- Desk surface (angled, lectern style) -->
+  <polygon points="108,360 292,360 306,440 94,440" fill="#5c3d2e"/>
+  <!-- Desk top edge -->
+  <line x1="108" y1="360" x2="292" y2="360" stroke="#fcc051" stroke-width="2.5"/>
+  <!-- Desk bottom edge -->
+  <line x1="94" y1="440" x2="306" y2="440" stroke="#fcc051" stroke-width="1.5"/>
+  <!-- Book stop (horizontal bar at bottom of slant) -->
+  <rect x="94" y="435" width="212" height="8" rx="3" fill="#3a2010" stroke="#fcc051" stroke-width="1"/>
+
+  <!-- OPEN MANUSCRIPT / BOOK on desk -->
+  <!-- Left page -->
+  <path d="M 118 325 Q 118 362 120 365 L 200 362 L 200 325 Q 200 320 195 318 L 125 318 Q 118 320 118 325 Z"
+        fill="url(#page-grad)" stroke="#c9a96e" stroke-width="1"/>
+  <!-- Right page -->
+  <path d="M 200 325 L 200 362 L 280 365 Q 282 362 282 325 Q 282 320 275 318 L 205 318 Q 200 320 200 325 Z"
+        fill="url(#page-grad)" stroke="#c9a96e" stroke-width="1"/>
+  <!-- Book spine (center fold) -->
+  <line x1="200" y1="318" x2="200" y2="362" stroke="#8b6558" stroke-width="3"/>
+  <!-- Book cover (bottom edge showing) -->
+  <rect x="115" y="360" width="170" height="8" rx="2" fill="#5c3d2e" stroke="#c9a96e" stroke-width="1"/>
+  <!-- Decorative manuscript border (illuminated frame) -->
+  <rect x="122" y="322" width="72" height="38" rx="2" fill="none" stroke="#fcc051" stroke-width="1" opacity="0.6"/>
+  <rect x="206" y="322" width="72" height="38" rx="2" fill="none" stroke="#fcc051" stroke-width="1" opacity="0.6"/>
+  <!-- Text lines on left page -->
+  <line x1="126" y1="330" x2="190" y2="330" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="126" y1="336" x2="190" y2="336" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="126" y1="342" x2="188" y2="342" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="126" y1="348" x2="190" y2="348" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="126" y1="354" x2="186" y2="354" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <!-- Illuminated initial (left page) -->
+  <text x="124" y="345" font-family="Georgia, serif" font-size="24" fill="#8c0303" font-weight="bold" opacity="0.8">D</text>
+  <!-- Text lines on right page -->
+  <line x1="210" y1="330" x2="274" y2="330" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="210" y1="336" x2="274" y2="336" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="210" y1="342" x2="272" y2="342" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="210" y1="348" x2="274" y2="348" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+  <line x1="210" y1="354" x2="270" y2="354" stroke="#8b6558" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- NUN FIGURE (left side, seated, reading) -->
+  <!-- Nun habit (black, long) -->
+  <path d="M 95 390 Q 88 400 90 440 Q 92 455 108 458 Q 128 460 140 455
+           Q 148 450 148 440 Q 148 408 142 392 Z" fill="#1a1a1a"/>
+  <!-- Nun torso / upper body -->
+  <ellipse cx="120" cy="378" rx="28" ry="22" fill="#1a1a1a"/>
+  <!-- White wimple / headpiece (framing face) -->
+  <path d="M 96 362 Q 94 350 100 340 Q 108 328 120 326 Q 132 328 140 340
+           Q 146 350 144 362 Q 136 356 120 354 Q 104 356 96 362 Z"
+        fill="#f5f5f5"/>
+  <!-- Black veil over wimple -->
+  <path d="M 92 360 Q 88 345 96 330 Q 105 316 120 314 Q 135 316 144 330
+           Q 152 345 148 360 Q 140 348 120 346 Q 100 348 92 360 Z"
+        fill="#1a1a1a"/>
+  <!-- White wimple band (facial frame) -->
+  <path d="M 96 362 Q 94 374 96 384 Q 100 380 120 378 Q 140 380 144 384
+           Q 146 374 144 362 Q 136 368 120 370 Q 104 368 96 362 Z"
+        fill="#e8e8e8"/>
+  <!-- Nun arms (reaching toward book) -->
+  <!-- Right arm extending toward book -->
+  <path d="M 138 385 Q 155 372 168 362 Q 172 368 170 375 Q 158 382 144 392 Z"
+        fill="#1a1a1a"/>
+  <!-- Left arm (resting) -->
+  <path d="M 102 385 Q 95 395 94 410 Q 102 412 108 405 Q 108 398 110 388 Z"
+        fill="#1a1a1a"/>
+  <!-- Hands (pale, reaching to book) -->
+  <ellipse cx="168" cy="370" rx="9" ry="7" fill="#c9a06a"/>
+
+  <!-- NUN FACE -->
+  <ellipse cx="120" cy="348" rx="20" ry="22" fill="#c9a06a"/>
+  <!-- Eyes (downcast, reading) -->
+  <ellipse cx="113" cy="349" rx="4" ry="3" fill="#2c1810"/>
+  <ellipse cx="127" cy="349" rx="4" ry="3" fill="#2c1810"/>
+  <!-- Eyebrows -->
+  <path d="M 108 343 Q 113 340 118 342" stroke="#3a2010" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M 122 342 Q 127 340 132 343" stroke="#3a2010" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- Nose and lips (small, delicate) -->
+  <path d="M 120 352 Q 118 357 118 360 M 120 352 Q 122 357 122 360"
+        stroke="#a07850" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M 116 363 Q 120 366 124 363" stroke="#8c4040" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ANGEL FIGURE (right side, pointing to book) -->
+  <!-- Angel robes (white/gold, standing) -->
+  <path d="M 255 320 Q 248 345 250 400 Q 255 420 270 425 Q 285 428 298 422
+           Q 312 415 314 398 Q 316 345 308 320 Z"
+        fill="#f5e6c8" stroke="#e8c97e" stroke-width="1"/>
+  <!-- Angel torso -->
+  <ellipse cx="282" cy="308" rx="28" ry="22" fill="#f5e6c8"/>
+  <!-- Angel arm (pointing down-left toward book) -->
+  <path d="M 262 315 Q 238 330 225 345 Q 232 352 240 348 Q 254 335 268 322 Z"
+        fill="#c9a06a"/>
+  <!-- Pointing hand -->
+  <ellipse cx="220" cy="348" rx="9" ry="7" fill="#c9a06a"/>
+  <!-- Pointing finger (toward book) -->
+  <line x1="213" y1="348" x2="198" y2="348" stroke="#c9a06a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Angel other arm (raised, graceful) -->
+  <path d="M 302 310 Q 322 295 332 280 Q 340 285 338 295 Q 326 308 312 320 Z"
+        fill="#c9a06a"/>
+
+  <!-- ANGEL HEAD / FACE -->
+  <ellipse cx="282" cy="285" rx="22" ry="25" fill="#c9a06a"/>
+  <!-- Halo -->
+  <circle cx="282" cy="282" r="32" fill="none" stroke="#fcc051" stroke-width="3" opacity="0.75"/>
+  <!-- Hair (golden, angelic) -->
+  <path d="M 262 278 Q 260 264 268 252 Q 276 244 282 242 Q 288 244 296 252
+           Q 304 264 302 278 Q 296 268 282 266 Q 268 268 262 278 Z"
+        fill="#c9a96e"/>
+  <!-- Hair flowing sides -->
+  <path d="M 262 278 Q 258 292 260 308 Q 266 295 270 280 Z" fill="#c9a96e"/>
+  <path d="M 302 278 Q 306 292 304 308 Q 298 295 294 280 Z" fill="#c9a96e"/>
+  <!-- Angel face features -->
+  <ellipse cx="275" cy="285" rx="4.5" ry="3.5" fill="#2c1810"/>
+  <ellipse cx="289" cy="285" rx="4.5" ry="3.5" fill="#2c1810"/>
+  <path d="M 270 279 Q 275 276 280 278" stroke="#3a2010" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M 284 278 Q 289 276 294 279" stroke="#3a2010" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M 278 295 Q 282 298 286 295" stroke="#8c4040" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Decorative corner ornaments -->
+  <g opacity="0.55" fill="none" stroke="#fcc051" stroke-width="1.5">
+    <circle cx="38" cy="38" r="10"/>
+    <line x1="28" y1="38" x2="48" y2="38"/>
+    <line x1="38" y1="28" x2="38" y2="48"/>
+    <circle cx="362" cy="38" r="10"/>
+    <line x1="352" y1="38" x2="372" y2="38"/>
+    <line x1="362" y1="28" x2="362" y2="48"/>
+    <circle cx="38" cy="562" r="10"/>
+    <line x1="28" y1="562" x2="48" y2="562"/>
+    <line x1="38" y1="552" x2="38" y2="572"/>
+    <circle cx="362" cy="562" r="10"/>
+    <line x1="352" y1="562" x2="372" y2="562"/>
+    <line x1="362" y1="552" x2="362" y2="572"/>
+  </g>
+
+  <!-- Gold border -->
+  <rect x="10" y="10" width="380" height="580" rx="8" fill="none" stroke="#fcc051" stroke-width="4"/>
+  <rect x="18" y="18" width="364" height="564" rx="6" fill="none" stroke="#fcc051" stroke-width="1" opacity="0.35"/>
+
+  <!-- Placeholder note -->
+  <text x="200" y="570" text-anchor="middle" font-family="sans-serif" font-size="10"
+        fill="#fcc051" opacity="0.38" letter-spacing="1">[ placeholder — replace with manuscript image ]</text>
+</svg>

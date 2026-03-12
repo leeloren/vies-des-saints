@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <radialGradient id="lives-bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#6b4020"/>
+      <stop offset="100%" stop-color="#1a0f00"/>
+    </radialGradient>
+    <radialGradient id="lives-glow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#fcc051" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#fcc051" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scroll-face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf4e0"/>
+      <stop offset="100%" stop-color="#e8d5a3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#lives-bg)"/>
+  <ellipse cx="200" cy="310" rx="165" ry="190" fill="url(#lives-glow)"/>
+
+  <!-- Stone arch (arched window upper center) -->
+  <rect x="150" y="38" width="100" height="145" rx="0" fill="#1a0f00"/>
+  <path d="M 150 115 Q 200 50 250 115" fill="#1a0f00"/>
+  <rect x="152" y="115" width="96" height="68" fill="#5a8ab8"/>
+  <path d="M 152 115 Q 200 54 248 115" fill="#5a8ab8"/>
+  <line x1="200" y1="54" x2="200" y2="183" stroke="#3a2010" stroke-width="5"/>
+  <line x1="152" y1="130" x2="248" y2="130" stroke="#3a2010" stroke-width="5"/>
+  <!-- Window light wash on scene -->
+  <polygon points="165,183 235,183 260,310 140,310" fill="#fcc051" opacity="0.06"/>
+
+  <!-- Writing lectern / desk surface -->
+  <polygon points="75,355 325,355 340,430 60,430" fill="#4a2c18"/>
+  <polygon points="75,355 325,355 325,362 75,362" fill="#5c3d2e"/>
+  <line x1="75" y1="355" x2="325" y2="355" stroke="#fcc051" stroke-width="2.5"/>
+  <!-- Desk legs -->
+  <rect x="100" y="430" width="14" height="100" rx="4" fill="#3a2010"/>
+  <rect x="286" y="430" width="14" height="100" rx="4" fill="#3a2010"/>
+
+  <!-- SCROLL on desk -->
+  <!-- Scroll parchment body -->
+  <rect x="110" y="315" width="180" height="42" rx="6" fill="url(#scroll-face)" stroke="#c9a96e" stroke-width="1.5"/>
+  <!-- Rolled left end -->
+  <ellipse cx="113" cy="336" rx="11" ry="21" fill="#e8d5a3" stroke="#c9a96e" stroke-width="1.5"/>
+  <!-- Rolled right end -->
+  <ellipse cx="287" cy="336" rx="11" ry="21" fill="#e8d5a3" stroke="#c9a96e" stroke-width="1.5"/>
+  <!-- Text lines on scroll -->
+  <line x1="130" y1="324" x2="272" y2="324" stroke="#8b6558" stroke-width="1.5" opacity="0.55"/>
+  <line x1="130" y1="333" x2="270" y2="333" stroke="#8b6558" stroke-width="1.5" opacity="0.55"/>
+  <line x1="130" y1="342" x2="268" y2="342" stroke="#8b6558" stroke-width="1.5" opacity="0.55"/>
+  <line x1="130" y1="351" x2="265" y2="351" stroke="#8b6558" stroke-width="1.5" opacity="0.55"/>
+  <!-- Red drop cap letter -->
+  <text x="129" y="348" font-family="Georgia, serif" font-size="28" fill="#8c0303" font-weight="bold" opacity="0.85">O</text>
+
+  <!-- Inkwell (upper left of desk) -->
+  <ellipse cx="95" cy="358" rx="20" ry="14" fill="#1a0f00" stroke="#fcc051" stroke-width="1.5"/>
+  <ellipse cx="95" cy="355" rx="17" ry="10" fill="#1a3055" opacity="0.7"/>
+  <path d="M 78 355 Q 95 348 112 355" stroke="rgba(252,192,81,0.45)" stroke-width="1" fill="none"/>
+
+  <!-- QUILL PEN (large, dominant, angled across composition) -->
+  <!-- Main shaft / rachis -->
+  <line x1="155" y1="120" x2="235" y2="348" stroke="#d4b87a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Feather (right side vane, large) -->
+  <path d="M 155 120 Q 215 150 238 240 Q 218 210 195 188 Q 175 165 155 120 Z"
+        fill="#fdf4e0" stroke="#c9a96e" stroke-width="1.5" opacity="0.92"/>
+  <!-- Feather (left side vane, narrower) -->
+  <path d="M 155 120 Q 145 165 155 230 Q 150 200 148 170 Q 148 145 155 120 Z"
+        fill="#e8d5a3" stroke="#c9a96e" stroke-width="1" opacity="0.7"/>
+  <!-- Quill nib (split) -->
+  <path d="M 232 342 L 242 362 L 235 365 L 228 360 Z" fill="#5c3d2e" stroke="#3a2010" stroke-width="0.5"/>
+  <!-- Ink drop -->
+  <ellipse cx="236" cy="365" rx="5" ry="4" fill="#1a0f00" opacity="0.9"/>
+
+  <!-- MONK FIGURE (seated, bent over desk, writing) -->
+  <!-- Lower robes / seated form -->
+  <path d="M 265 290 Q 255 340 258 400 Q 268 418 290 415 Q 315 410 318 395 Q 323 340 312 290 Z"
+        fill="#2c1810"/>
+  <!-- Upper body / back (bent forward) -->
+  <ellipse cx="290" cy="278" rx="38" ry="30" fill="#2c1810"/>
+  <!-- Cowl / hood (bent forward, dark) -->
+  <path d="M 260 258 Q 255 272 256 285 Q 268 278 288 276 Q 308 278 320 285 Q 321 272 316 258 Z"
+        fill="#1a0f00"/>
+  <!-- Right arm reaching down to quill hand position -->
+  <path d="M 267 275 Q 250 295 238 340 Q 248 348 258 342 Q 268 300 280 280 Z" fill="#2c1810"/>
+  <!-- Left arm resting on desk -->
+  <path d="M 315 285 Q 330 300 332 338 Q 322 342 314 336 Q 310 305 298 287 Z" fill="#2c1810"/>
+
+  <!-- MONK HEAD (bent down) -->
+  <ellipse cx="290" cy="244" rx="26" ry="29" fill="#c9a06a"/>
+  <!-- Tonsure (bald crown) -->
+  <ellipse cx="290" cy="232" rx="16" ry="15" fill="#d4a87a"/>
+  <!-- White hair (elderly, around sides) -->
+  <path d="M 266 242 Q 264 258 270 272 Q 278 278 290 280 Q 302 278 310 272 Q 316 258 314 242
+           Q 308 248 290 248 Q 272 248 266 242 Z" fill="#e8d5a3" opacity="0.88"/>
+  <!-- White beard -->
+  <path d="M 278 268 Q 280 285 283 297 Q 290 305 297 297 Q 300 285 302 268
+           Q 296 274 290 274 Q 284 274 278 268 Z" fill="#e8d5a3" opacity="0.82"/>
+  <!-- Eyes (downcast) -->
+  <ellipse cx="282" cy="250" rx="4.5" ry="3" fill="#2c1810"/>
+  <ellipse cx="298" cy="250" rx="4.5" ry="3" fill="#2c1810"/>
+  <!-- Eyebrows (bushy) -->
+  <path d="M 276 244 Q 282 241 288 243" stroke="#8b6558" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 292 243 Q 298 241 303 244" stroke="#8b6558" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Candlestick (lower left, warm glow) -->
+  <ellipse cx="68" cy="368" rx="24" ry="60" fill="#fcc051" opacity="0.12"/>
+  <path d="M 68 318 Q 74 326 72 334 Q 68 339 64 334 Q 62 326 68 318 Z" fill="#fcc051"/>
+  <path d="M 68 321 Q 72 327 71 333 Q 68 336 65 333 Q 63 327 68 321 Z" fill="white" opacity="0.7"/>
+  <rect x="64" y="338" width="8" height="32" fill="#fdf4e0" rx="2"/>
+  <ellipse cx="68" cy="372" rx="14" ry="5" fill="#8b6558" stroke="#fcc051" stroke-width="1.5"/>
+
+  <!-- Decorative medieval corner knots (four corners) -->
+  <g opacity="0.6">
+    <circle cx="40" cy="40" r="8" fill="none" stroke="#fcc051" stroke-width="2"/>
+    <circle cx="40" cy="40" r="3" fill="#fcc051"/>
+    <circle cx="360" cy="40" r="8" fill="none" stroke="#fcc051" stroke-width="2"/>
+    <circle cx="360" cy="40" r="3" fill="#fcc051"/>
+    <circle cx="40" cy="560" r="8" fill="none" stroke="#fcc051" stroke-width="2"/>
+    <circle cx="40" cy="560" r="3" fill="#fcc051"/>
+    <circle cx="360" cy="560" r="8" fill="none" stroke="#fcc051" stroke-width="2"/>
+    <circle cx="360" cy="560" r="3" fill="#fcc051"/>
+  </g>
+
+  <!-- GOLD BORDER -->
+  <rect x="10" y="10" width="380" height="580" rx="8" fill="none" stroke="#fcc051" stroke-width="4"/>
+  <rect x="18" y="18" width="364" height="564" rx="6" fill="none" stroke="#fcc051" stroke-width="1" opacity="0.35"/>
+
+  <!-- Placeholder note -->
+  <text x="200" y="488" text-anchor="middle" font-family="sans-serif" font-size="10"
+        fill="#fcc051" opacity="0.38" letter-spacing="1">[ placeholder — replace with manuscript image ]</text>
+</svg>

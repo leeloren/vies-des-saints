@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search — Lives of the Saints</title>
+  <meta name="description" content="Search the Lives of the Saints corpus — manuscripts, saints, and textual traditions.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Lives of the Saints</a>
+      <ul class="nav-links">
+
+        <li><a href="transcriptions/bnf-fr-23112.html">Digital Editions</a></li>
+
+        <li class="nav-item--dropdown">
+          <a href="#" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            Inventories <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="lives.html">Lives</a></li>
+            <li><a href="saints.html">Saints</a></li>
+            <li><a href="manuscripts.html">Manuscripts</a></li>
+          </ul>
+        </li>
+
+        <li><a href="search.html" aria-current="page">Search</a></li>
+
+        <li class="nav-item--dropdown">
+          <a href="about.html" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            About <span class="nav-arrow" aria-hidden="true">▾</span>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="about.html#objectives">Objectives</a></li>
+            <li><a href="about.html#editorial-principles">Editorial Principles</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <h1 class="page-title">Search</h1>
+
+    <p style="margin-bottom: var(--space-lg); color: var(--color-text-muted); font-style: italic;">
+      Search the full corpus of saints' Lives, manuscripts, and digital editions.
+    </p>
+
+    <!--
+      TODO: Implement full-text search across the site. Options to consider:
+        1. Pagefind (static site search, runs entirely client-side) — recommended for a
+           GitHub Pages deployment: https://pagefind.app/
+        2. Lunr.js (lightweight JS search library): https://lunrjs.com/
+        3. Algolia DocSearch (hosted, free for open-source projects)
+      The search index should cover: manuscript shelfmarks, saint names, Life titles,
+      authors, transcription text (where available), and about page content.
+    -->
+    <p class="todo-note">
+      Build the site search tool here. A static site search engine such as
+      <a href="https://pagefind.app/" target="_blank" rel="noopener">Pagefind</a>
+      or <a href="https://lunrjs.com/" target="_blank" rel="noopener">Lunr.js</a>
+      is recommended for a GitHub Pages deployment. The search interface should
+      allow users to search across manuscripts, saints' Lives, transcription text,
+      and about-page content.
+    </p>
+
+    <!-- Placeholder search form (non-functional) -->
+    <div style="max-width: 600px; margin-top: var(--space-lg);">
+      <label for="site-search" class="visually-hidden">Search the site</label>
+      <div style="display: flex; gap: var(--space-sm);">
+        <input
+          type="search"
+          id="site-search"
+          placeholder="Search manuscripts, saints, Lives…"
+          style="flex: 1; padding: 10px 16px; border: 2px solid var(--color-gold);
+                 border-radius: 4px; background: rgba(255,255,255,0.55);
+                 font-family: var(--font-body); font-size: 1rem;
+                 color: var(--color-text);"
+          disabled
+          aria-label="Site search (not yet available)">
+        <button
+          type="button"
+          style="padding: 10px 20px; background: var(--color-red);
+                 color: var(--color-parchment); border: none; border-radius: 4px;
+                 font-family: var(--font-body); font-size: 1rem; cursor: not-allowed;
+                 opacity: 0.6;"
+          disabled>
+          Search
+        </button>
+      </div>
+      <p style="margin-top: var(--space-sm); font-size: 0.9rem;
+                color: var(--color-text-muted); font-style: italic;">
+        Site search is not yet available. Use the Manuscript Index
+        (<a href="manuscripts.html">Manuscripts</a>) for filtering by shelfmark,
+        origin, or saint.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>
+      A research project on medieval hagiographic manuscripts
+      <span class="footer-divider">·</span>
+      Manuscript data from <a href="https://jonas.irht.cnrs.fr/" target="_blank" rel="noopener">Jonas (IRHT–CNRS)</a>
+    </p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
